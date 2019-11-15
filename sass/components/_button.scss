@@ -1,13 +1,57 @@
-.btn,
-.btn:link,
-.btn:visited {
-    /*
-    Remove default styling
-    */
+.btn {
+  padding: 0.2rem;
+
+  //Remove default styling
+  &:link,
+  &:visited {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     cursor: pointer;
+  }
+
+  /*
+  * Generate color modifiers
+  */
+  @each $key, $color in $colors {
+    &--#{$key} {
+      background-color: $color;
+      transition: background-color .2s;
+        
+      &:hover {
+          background-color: lighten($color, 10%);
+      }
+    }
+  }
+
+  /*
+  * Rounded on the edge of the button
+  */
+  &--round {
+      border-radius: 10rem;
+
+      &-light {
+        border-radius: 2px;
+      }
+
+      &-light-1 {
+        border-radius: 4px;
+      }
+
+      &-light-2 {
+          border-radius: 7px;
+      }
+  }
+}
 
 
-
+/*
+* Remove styling for input & button
+*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  border: none;
+  font: inherit;
+  outline: none;
 }

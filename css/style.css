@@ -1,9 +1,61 @@
-.btn,
-.btn:link,
-.btn:visited {
+.btn {
+  padding: 0.2rem;
   /*
-    Remove default styling
-    */
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer; }
+  * Generate color modifiers
+  */
+  /*
+  * Rounded on the edge of the button
+  */ }
+  .btn:link, .btn:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; }
+  .btn--primary {
+    background-color: #4caf50;
+    transition: background-color .2s; }
+    .btn--primary:hover {
+      background-color: #6ec071; }
+  .btn--secondary {
+    background-color: #2196f3;
+    transition: background-color .2s; }
+    .btn--secondary:hover {
+      background-color: #51adf6; }
+  .btn--tertiary {
+    background-color: #9c27b0;
+    transition: background-color .2s; }
+    .btn--tertiary:hover {
+      background-color: #bc37d3; }
+  .btn--error {
+    background-color: #f44336;
+    transition: background-color .2s; }
+    .btn--error:hover {
+      background-color: #f77066; }
+  .btn--warning {
+    background-color: #ff9800;
+    transition: background-color .2s; }
+    .btn--warning:hover {
+      background-color: #ffad33; }
+  .btn--info {
+    background-color: cyan;
+    transition: background-color .2s; }
+    .btn--info:hover {
+      background-color: #33ffff; }
+  .btn--round {
+    border-radius: 10rem; }
+    .btn--round-light {
+      border-radius: 2px; }
+    .btn--round-light-1 {
+      border-radius: 4px; }
+    .btn--round-light-2 {
+      border-radius: 7px; }
+
+/*
+* Remove styling for input & button
+*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  border: none;
+  font: inherit;
+  outline: none; }

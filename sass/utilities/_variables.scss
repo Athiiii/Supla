@@ -1,7 +1,20 @@
 // COLORS
+$color-primary: #4caf50;
+$color-secondary: #2196f3;
+$color-tertiary: #9c27b0;
+$color-error: #f44336;
+$color-warning: #ff9800;
+$color-info: cyan;
 
+$colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "tertiary": $color-tertiary,
+  "error": $color-error,
+  "warning": $color-warning,
+  "info": $color-info
+);
 
 // TYPOGRAPHY
-
 
 // LAYOUT
