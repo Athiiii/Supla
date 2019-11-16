@@ -1,7 +1,7 @@
 // COLORS
 $color-primary: #4caf50;
 $color-secondary: #2196f3;
-$color-tertiary: #9c27b0;
+$color-tertiary: #c45cd6;
 $color-error: #f44336;
 $color-warning: #ff9800;
 $color-info: cyan;
@@ -15,6 +15,25 @@ $colors: (
   "info": $color-info
 );
 
+$color-grey: #dbdbdb;
+$color-white: #fff;
+$color-black: #000;
+
 // TYPOGRAPHY
+$font-familiy: 'Lato';
+
+// Font Weight
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900;
+
+// Font size
+$font-tiny: 0.3rem;
+$font-small: 0.7rem;
+$font-medium: 1rem;
+$font-big: 1.5rem;
+$font-large: 2rem;
 
 // LAYOUT

@@ -1,12 +1,27 @@
 .btn {
-  padding: 0.2rem;
+  padding: 0.3rem 0.5rem;
+  font-family: $font-familiy;
+  font-weight: $font-regular;
+  font-size: $font-small;
+  transition: box-shadow 0.2s;
+  background-color: darken($color-white, 10%);
+  color: $color-white;
+  cursor: pointer;
 
   //Remove default styling
   &:link,
   &:visited {
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, .1);
   }
 
   /*
@@ -14,12 +29,8 @@
   */
   @each $key, $color in $colors {
     &--#{$key} {
+      color: inherit;
       background-color: $color;
-      transition: background-color .2s;
-        
-      &:hover {
-          background-color: lighten($color, 10%);
-      }
     }
   }
 
@@ -27,22 +38,21 @@
   * Rounded on the edge of the button
   */
   &--round {
-      border-radius: 10rem;
+    border-radius: 10rem;
 
-      &-light {
-        border-radius: 2px;
-      }
+    &-light {
+      border-radius: 2px;
+    }
 
-      &-light-1 {
-        border-radius: 4px;
-      }
+    &-light-1 {
+      border-radius: 4px;
+    }
 
-      &-light-2 {
-          border-radius: 7px;
-      }
+    &-light-2 {
+      border-radius: 7px;
+    }
   }
 }
-
 
 /*
 * Remove styling for input & button
@@ -52,6 +62,5 @@ input[type="reset"],
 input[type="button"],
 button {
   border: none;
-  font: inherit;
   outline: none;
 }
