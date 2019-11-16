@@ -1,11 +1,14 @@
+// Colors
+$default-btn-color: darken($color-white, 10%);
+
 .btn {
   padding: 0.3rem 0.5rem;
   font-family: $font-familiy;
   font-weight: $font-regular;
   font-size: $font-small;
   transition: box-shadow 0.2s;
-  background-color: darken($color-white, 10%);
-  color: $color-white;
+  background-color: $default-btn-color;
+  color: $color-black;
   cursor: pointer;
 
   //Remove default styling
@@ -28,16 +31,20 @@
   * Generate color modifiers
   */
   @each $key, $color in $colors {
-    &--#{$key} {
-      color: inherit;
+    &-#{$key} {
+      color: $color-white;
       background-color: $color;
+    }
+
+    &-outline-#{key} {
+      @include buttonOutline($color);
     }
   }
 
   /*
   * Rounded on the edge of the button
   */
-  &--round {
+  &-round {
     border-radius: 10rem;
 
     &-light {
