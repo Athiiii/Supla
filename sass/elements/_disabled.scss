@@ -1,0 +1,9 @@
+/*
+* Disable clicking on a element 
+* Either use disabled class or the disabled attribute
+*/
+.disabled,
+*[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

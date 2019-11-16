@@ -1,0 +1,8 @@
+.outline {
+  color: red;
+  @each $key, $outline in $outlines {
+    &-#{$key} {
+      border-width: $outline;
+    }
+  }
+}

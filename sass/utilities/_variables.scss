@@ -17,10 +17,10 @@ $colors: (
 
 $color-grey: #dbdbdb;
 $color-white: #fff;
-$color-black: #000;
+$color-black: #1f1d1d;
 
 // TYPOGRAPHY
-$font-familiy: 'Lato';
+$font-familiy: "Lato";
 
 // Font Weight
 $font-thin: 100;
@@ -30,10 +30,31 @@ $font-bold: 700;
 $font-black: 900;
 
 // Font size
-$font-tiny: 0.3rem;
-$font-small: 0.7rem;
-$font-medium: 1rem;
-$font-big: 1.5rem;
-$font-large: 2rem;
+$font-tiny: 0.7rem;
+$font-small: 1rem;
+$font-medium: 1.4rem;
+$font-big: 2rem;
+$font-large: 2.5rem;
 
-// LAYOUT
+// OUTLINE
+$outline-thin: 0.04rem;
+$outline-small: 0.06rem;
+$outline-regular: 0.08rem;
+$outline-big: 0.12rem;
+$outline-large: 0.2rem;
+
+$outlines: (
+  "thin": $outline-thin,
+  "small": $outline-small,
+  "regular": $outline-regular,
+  "big": $outline-big,
+  "large": $outline-large
+);
+
+// Border
+$border-round: 10rem;
+$border-round-light: 0.1rem;
+$border-round-regular: 0.2rem;
+$border-round-light-1: 0.4rem;
+$border-round-light-2: 0.7rem;
+$default-border: $outline-regular solid;
