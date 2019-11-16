@@ -5,7 +5,7 @@
 
   @include buttonActions($color);
 
-  &:hover {
+  &:hover:not(.disabled) {
     background-color: $color;
     color: $color-white;
   }

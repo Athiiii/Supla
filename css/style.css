@@ -17,7 +17,9 @@ button {
   border-radius: 0.2rem;
   user-select: none;
   transition: border-color 0.3s;
-  justify-content: center;
+  justify-content: center; }
+
+.btn {
   border: 0.08rem solid #e6e6e6;
   /*
   * Generate color modifiers
@@ -25,246 +27,164 @@ button {
   /*
   * Rounded on the edge of the button
   */ }
-  .btn:link, .btn:visited,
-  button:link,
-  button:visited {
-    text-decoration: none;
-    color: inherit; }
-  .btn:hover:not([class*="btn-"]):not(.disabled),
-  button:hover:not([class*="btn-"]):not(.disabled) {
+  .btn:link, .btn:visited {
+    text-decoration: none; }
+  .btn:hover:not([class*="btn-"]):not(.disabled) {
     border-color: #b3b3b3; }
-  .btn:focus:not([class*="btn-"]):not(.disabled), .btn:active:not([class*="btn-"]):not(.disabled),
-  button:focus:not([class*="btn-"]):not(.disabled),
-  button:active:not([class*="btn-"]):not(.disabled) {
+  .btn:focus:not([class*="btn-"]):not(.disabled), .btn:active:not([class*="btn-"]):not(.disabled) {
     border-color: #1f1d1d; }
-  .btn-primary,
-  button-primary {
+  .btn-primary {
     color: #fff;
     background-color: #4caf50; }
-    .btn-primary,
-    button-primary {
+    .btn-primary {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-primary:hover:not(.disabled),
-    button-primary:hover:not(.disabled) {
+    .btn-primary:hover:not(.disabled) {
       background-color: #6ec071; }
-    .btn-primary:focus:not(.disabled), .btn-primary:active:not(.disabled),
-    button-primary:focus:not(.disabled),
-    button-primary:active:not(.disabled) {
+    .btn-primary:focus:not(.disabled), .btn-primary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(76, 175, 80, 0.3); }
-  .btn-outline-primary,
-  button-outline-primary {
+  .btn-outline-primary {
     background-color: #fff;
     color: #4caf50;
     border: 0.08rem solid #4caf50; }
-    .btn-outline-primary,
-    button-outline-primary {
+    .btn-outline-primary {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline-primary:hover:not(.disabled),
-    button-outline-primary:hover:not(.disabled) {
+    .btn-outline-primary:hover:not(.disabled) {
       background-color: #6ec071; }
-    .btn-outline-primary:focus:not(.disabled), .btn-outline-primary:active:not(.disabled),
-    button-outline-primary:focus:not(.disabled),
-    button-outline-primary:active:not(.disabled) {
+    .btn-outline-primary:focus:not(.disabled), .btn-outline-primary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(76, 175, 80, 0.3); }
-    .btn-outline-primary:hover,
-    button-outline-primary:hover {
+    .btn-outline-primary:hover:not(.disabled) {
       background-color: #4caf50;
       color: #fff; }
-  .btn-secondary,
-  button-secondary {
+  .btn-secondary {
     color: #fff;
     background-color: #2196f3; }
-    .btn-secondary,
-    button-secondary {
+    .btn-secondary {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-secondary:hover:not(.disabled),
-    button-secondary:hover:not(.disabled) {
+    .btn-secondary:hover:not(.disabled) {
       background-color: #51adf6; }
-    .btn-secondary:focus:not(.disabled), .btn-secondary:active:not(.disabled),
-    button-secondary:focus:not(.disabled),
-    button-secondary:active:not(.disabled) {
+    .btn-secondary:focus:not(.disabled), .btn-secondary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(33, 150, 243, 0.3); }
-  .btn-outline-secondary,
-  button-outline-secondary {
+  .btn-outline-secondary {
     background-color: #fff;
     color: #2196f3;
     border: 0.08rem solid #2196f3; }
-    .btn-outline-secondary,
-    button-outline-secondary {
+    .btn-outline-secondary {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline-secondary:hover:not(.disabled),
-    button-outline-secondary:hover:not(.disabled) {
+    .btn-outline-secondary:hover:not(.disabled) {
       background-color: #51adf6; }
-    .btn-outline-secondary:focus:not(.disabled), .btn-outline-secondary:active:not(.disabled),
-    button-outline-secondary:focus:not(.disabled),
-    button-outline-secondary:active:not(.disabled) {
+    .btn-outline-secondary:focus:not(.disabled), .btn-outline-secondary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(33, 150, 243, 0.3); }
-    .btn-outline-secondary:hover,
-    button-outline-secondary:hover {
+    .btn-outline-secondary:hover:not(.disabled) {
       background-color: #2196f3;
       color: #fff; }
-  .btn-tertiary,
-  button-tertiary {
+  .btn-tertiary {
     color: #fff;
     background-color: #c45cd6; }
-    .btn-tertiary,
-    button-tertiary {
+    .btn-tertiary {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-tertiary:hover:not(.disabled),
-    button-tertiary:hover:not(.disabled) {
+    .btn-tertiary:hover:not(.disabled) {
       background-color: #d385e0; }
-    .btn-tertiary:focus:not(.disabled), .btn-tertiary:active:not(.disabled),
-    button-tertiary:focus:not(.disabled),
-    button-tertiary:active:not(.disabled) {
+    .btn-tertiary:focus:not(.disabled), .btn-tertiary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(196, 92, 214, 0.3); }
-  .btn-outline-tertiary,
-  button-outline-tertiary {
+  .btn-outline-tertiary {
     background-color: #fff;
     color: #c45cd6;
     border: 0.08rem solid #c45cd6; }
-    .btn-outline-tertiary,
-    button-outline-tertiary {
+    .btn-outline-tertiary {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline-tertiary:hover:not(.disabled),
-    button-outline-tertiary:hover:not(.disabled) {
+    .btn-outline-tertiary:hover:not(.disabled) {
       background-color: #d385e0; }
-    .btn-outline-tertiary:focus:not(.disabled), .btn-outline-tertiary:active:not(.disabled),
-    button-outline-tertiary:focus:not(.disabled),
-    button-outline-tertiary:active:not(.disabled) {
+    .btn-outline-tertiary:focus:not(.disabled), .btn-outline-tertiary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(196, 92, 214, 0.3); }
-    .btn-outline-tertiary:hover,
-    button-outline-tertiary:hover {
+    .btn-outline-tertiary:hover:not(.disabled) {
       background-color: #c45cd6;
       color: #fff; }
-  .btn-error,
-  button-error {
+  .btn-error {
     color: #fff;
     background-color: #f44336; }
-    .btn-error,
-    button-error {
+    .btn-error {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-error:hover:not(.disabled),
-    button-error:hover:not(.disabled) {
+    .btn-error:hover:not(.disabled) {
       background-color: #f77066; }
-    .btn-error:focus:not(.disabled), .btn-error:active:not(.disabled),
-    button-error:focus:not(.disabled),
-    button-error:active:not(.disabled) {
+    .btn-error:focus:not(.disabled), .btn-error:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(244, 67, 54, 0.3); }
-  .btn-outline-error,
-  button-outline-error {
+  .btn-outline-error {
     background-color: #fff;
     color: #f44336;
     border: 0.08rem solid #f44336; }
-    .btn-outline-error,
-    button-outline-error {
+    .btn-outline-error {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline-error:hover:not(.disabled),
-    button-outline-error:hover:not(.disabled) {
+    .btn-outline-error:hover:not(.disabled) {
       background-color: #f77066; }
-    .btn-outline-error:focus:not(.disabled), .btn-outline-error:active:not(.disabled),
-    button-outline-error:focus:not(.disabled),
-    button-outline-error:active:not(.disabled) {
+    .btn-outline-error:focus:not(.disabled), .btn-outline-error:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(244, 67, 54, 0.3); }
-    .btn-outline-error:hover,
-    button-outline-error:hover {
+    .btn-outline-error:hover:not(.disabled) {
       background-color: #f44336;
       color: #fff; }
-  .btn-warning,
-  button-warning {
+  .btn-warning {
     color: #fff;
     background-color: #ff9800; }
-    .btn-warning,
-    button-warning {
+    .btn-warning {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-warning:hover:not(.disabled),
-    button-warning:hover:not(.disabled) {
+    .btn-warning:hover:not(.disabled) {
       background-color: #ffad33; }
-    .btn-warning:focus:not(.disabled), .btn-warning:active:not(.disabled),
-    button-warning:focus:not(.disabled),
-    button-warning:active:not(.disabled) {
+    .btn-warning:focus:not(.disabled), .btn-warning:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(255, 152, 0, 0.3); }
-  .btn-outline-warning,
-  button-outline-warning {
+  .btn-outline-warning {
     background-color: #fff;
     color: #ff9800;
     border: 0.08rem solid #ff9800; }
-    .btn-outline-warning,
-    button-outline-warning {
+    .btn-outline-warning {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline-warning:hover:not(.disabled),
-    button-outline-warning:hover:not(.disabled) {
+    .btn-outline-warning:hover:not(.disabled) {
       background-color: #ffad33; }
-    .btn-outline-warning:focus:not(.disabled), .btn-outline-warning:active:not(.disabled),
-    button-outline-warning:focus:not(.disabled),
-    button-outline-warning:active:not(.disabled) {
+    .btn-outline-warning:focus:not(.disabled), .btn-outline-warning:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(255, 152, 0, 0.3); }
-    .btn-outline-warning:hover,
-    button-outline-warning:hover {
+    .btn-outline-warning:hover:not(.disabled) {
       background-color: #ff9800;
       color: #fff; }
-  .btn-info,
-  button-info {
+  .btn-info {
     color: #fff;
     background-color: cyan; }
-    .btn-info,
-    button-info {
+    .btn-info {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-info:hover:not(.disabled),
-    button-info:hover:not(.disabled) {
+    .btn-info:hover:not(.disabled) {
       background-color: #33ffff; }
-    .btn-info:focus:not(.disabled), .btn-info:active:not(.disabled),
-    button-info:focus:not(.disabled),
-    button-info:active:not(.disabled) {
+    .btn-info:focus:not(.disabled), .btn-info:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(0, 255, 255, 0.3); }
-  .btn-outline-info,
-  button-outline-info {
+  .btn-outline-info {
     background-color: #fff;
     color: cyan;
     border: 0.08rem solid cyan; }
-    .btn-outline-info,
-    button-outline-info {
+    .btn-outline-info {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline-info:hover:not(.disabled),
-    button-outline-info:hover:not(.disabled) {
+    .btn-outline-info:hover:not(.disabled) {
       background-color: #33ffff; }
-    .btn-outline-info:focus:not(.disabled), .btn-outline-info:active:not(.disabled),
-    button-outline-info:focus:not(.disabled),
-    button-outline-info:active:not(.disabled) {
+    .btn-outline-info:focus:not(.disabled), .btn-outline-info:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(0, 255, 255, 0.3); }
-    .btn-outline-info:hover,
-    button-outline-info:hover {
+    .btn-outline-info:hover:not(.disabled) {
       background-color: cyan;
       color: #fff; }
-  .btn-outline,
-  button-outline {
+  .btn-outline {
     background-color: #fff;
     color: #e6e6e6;
     border: 0.08rem solid #e6e6e6; }
-    .btn-outline,
-    button-outline {
+    .btn-outline {
       transition: background-color 0.3s, box-shadow 0.3s; }
-    .btn-outline:hover:not(.disabled),
-    button-outline:hover:not(.disabled) {
+    .btn-outline:hover:not(.disabled) {
       background-color: white; }
-    .btn-outline:focus:not(.disabled), .btn-outline:active:not(.disabled),
-    button-outline:focus:not(.disabled),
-    button-outline:active:not(.disabled) {
+    .btn-outline:focus:not(.disabled), .btn-outline:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(230, 230, 230, 0.3); }
-    .btn-outline:hover,
-    button-outline:hover {
+    .btn-outline:hover:not(.disabled) {
       background-color: #e6e6e6;
       color: #fff; }
-  .btn-round,
-  button-round {
+  .btn-round {
     border-radius: 10rem; }
-    .btn-round-light,
-    button-round-light {
+    .btn-round-light {
       border-radius: 0.1rem; }
-    .btn-round-light-1,
-    button-round-light-1 {
+    .btn-round-light-1 {
       border-radius: 0.4rem; }
-    .btn-round-light-2,
-    button-round-light-2 {
+    .btn-round-light-2 {
       border-radius: 0.7rem; }
 
 /*
@@ -297,4 +217,5 @@ button {
 .disabled,
 *[disabled] {
   opacity: 0.5;
-  cursor: not-allowed; }
+  cursor: not-allowed;
+  pointer-events: none; }
