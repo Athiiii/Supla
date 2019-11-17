@@ -1,11 +1,12 @@
 @mixin buttonOutline($color) {
-  background-color: $color-white;
+  background-color: transparent;
   color: $color;
-  border: $default-border $color;
 
+  @include createDefaultBorder($color);
   @include buttonActions($color);
+  @include swipeAnim($color, $color-white);
 
-  &:hover:not(.disabled) {
+  &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: $color;
     color: $color-white;
   }
@@ -16,7 +17,7 @@
     transition: background-color 0.3s, box-shadow 0.3s;
   }
 
-  &:hover:not(.disabled) {
+  &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: lighten($color, 10);
   }
 

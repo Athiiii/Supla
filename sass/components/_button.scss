@@ -13,11 +13,13 @@ button {
   color: $color-black;
   background-color: $color-white;
   cursor: pointer;
+  overflow: hidden;
   border-radius: $border-round-regular;
   user-select: none;
   transition: border-color 0.3s;
   justify-content: center;
   display: inline-block;
+  position: relative;
 
   &:not([class*="btn-"]) {
     @include createDefaultBorder($default-btn-color);
@@ -31,12 +33,12 @@ button {
     text-decoration: none;
   }
 
-  &:hover:not([class*="btn-"]):not(.disabled) {
+  &:hover:not([class*="btn-"]) {
     border-color: darken($default-btn-color, 20%);
   }
 
-  &:focus:not([class*="btn-"]):not(.disabled),
-  &:active:not([class*="btn-"]):not(.disabled) {
+  &:focus:not([class*="btn-"]),
+  &:active:not([class*="btn-"]) {
     border-color: $color-black;
   }
 
@@ -47,6 +49,8 @@ button {
     &-#{$key} {
       color: $color-white;
       background-color: $color;
+
+      @include createDefaultBorder($color);
       @include buttonActions($color);
     }
 
@@ -67,6 +71,8 @@ button {
       font-family: $font-familiy;
       font-size: $font-small;
       transition: color 0.2s;
+      background-color: transparent;
+      text-decoration: underline;
 
       &:hover {
         color: lighten($color-link, 20%);
