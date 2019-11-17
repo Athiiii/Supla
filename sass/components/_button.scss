@@ -1,13 +1,110 @@
+// Colors
+$default-btn-color: darken($color-white, 10%);
+
+/*
+* Button Component
+*/
 .btn,
-.btn:link,
-.btn:visited {
-    /*
-    Remove default styling
-    */
+button {
+  padding: 0.4rem 0.7rem;
+  font-family: $font-familiy;
+  font-weight: $font-regular;
+  font-size: $font-small;
+  color: $color-black;
+  background-color: $color-white;
+  cursor: pointer;
+  border-radius: $border-round-regular;
+  user-select: none;
+  transition: border-color 0.3s;
+  justify-content: center;
+  display: inline-block;
+
+  &:not([class*="btn-"]) {
+    @include createDefaultBorder($default-btn-color);
+  }
+}
+
+.btn {
+  //Remove default styling
+  &:link:not(&-link),
+  &:visited:not(&-link) {
     text-decoration: none;
-    color:inherit;
-    cursor: pointer;
+  }
 
+  &:hover:not([class*="btn-"]):not(.disabled) {
+    border-color: darken($default-btn-color, 20%);
+  }
 
+  &:focus:not([class*="btn-"]):not(.disabled),
+  &:active:not([class*="btn-"]):not(.disabled) {
+    border-color: $color-black;
+  }
 
+  /*
+  * Generate color modifiers
+  */
+  @each $key, $color in $colors {
+    &-#{$key} {
+      color: $color-white;
+      background-color: $color;
+      @include buttonActions($color);
+    }
+
+    &-outline-#{$key} {
+      @include buttonOutline($color);
+    }
+  }
+
+  &-outline {
+    @include buttonOutline($default-btn-color);
+  }
+
+  &-link {
+    &,
+    &:visited,
+    &:link {
+      color: $color-link;
+      font-family: $font-familiy;
+      font-size: $font-small;
+      transition: color 0.2s;
+
+      &:hover {
+        color: lighten($color-link, 20%);
+      }
+
+      &:focus {
+        color: darken($color-link, 20%);
+      }
+    }
+  }
+
+  /*
+  * Rounded on the edge of the button
+  */
+  &-round {
+    border-radius: $border-round;
+
+    &-light {
+      border-radius: $border-round-light;
+    }
+
+    &-light-1 {
+      border-radius: $border-round-light-1;
+    }
+
+    &-light-2 {
+      border-radius: $border-round-light-2;
+    }
+  }
+}
+
+/*
+* Remove styling for input & button
+*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  border: none;
+  outline: none;
 }

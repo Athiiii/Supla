@@ -181,15 +181,6 @@ button {
     .btn-outline:hover:not(.disabled) {
       background-color: #e6e6e6;
       color: #fff; }
-  .btn-link, .btn-link:visited, .btn-link:link {
-    color: #2196f3;
-    font-family: "Lato";
-    font-size: 1rem;
-    transition: color 0.2s; }
-    .btn-link:hover, .btn-link:visited:hover, .btn-link:link:hover {
-      color: #82c4f8; }
-    .btn-link:focus, .btn-link:visited:focus, .btn-link:link:focus {
-      color: #0960a5; }
   .btn-round {
     border-radius: 10rem; }
     .btn-round-light {

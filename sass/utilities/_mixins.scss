@@ -1,0 +1,31 @@
+@mixin buttonOutline($color) {
+  background-color: $color-white;
+  color: $color;
+  border: $default-border $color;
+
+  @include buttonActions($color);
+
+  &:hover:not(.disabled) {
+    background-color: $color;
+    color: $color-white;
+  }
+}
+
+@mixin buttonActions($color) {
+  & {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  &:hover:not(.disabled) {
+    background-color: lighten($color, 10);
+  }
+
+  &:focus:not(.disabled),
+  &:active:not(.disabled) {
+    box-shadow: 0 0 0 0.1rem rgba($color, 0.3);
+  }
+}
+
+@mixin createDefaultBorder($color) {
+  border: $default-border $color;
+}

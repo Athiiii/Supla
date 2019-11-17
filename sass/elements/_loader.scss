@@ -1,0 +1,82 @@
+/*
+* Loader
+*/
+[class*="loader"] {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  color: inherit;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+// default loader
+.loader {
+  border: 0.2rem solid currentcolor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: 1s loader linear infinite;
+  position: relative;
+}
+
+.loader-axe {
+  border: 0.2rem solid transparent;
+  border-left-color: currentcolor;
+  border-right-color: currentcolor;
+  border-radius: 50%;
+  animation: 1s loader-axe linear infinite;
+}
+
+.loader-quarter {
+  border: 0.2rem solid transparent;
+  border-top-color: currentcolor;
+  border-radius: 50%;
+  animation: 1s loader-quarter linear infinite;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: -0.2rem;
+    left: -0.2rem;
+    border: 0.2rem solid currentcolor;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+}
+
+.loader-fade-in {
+  border: 0.2rem solid currentcolor;
+  border-radius: 50%;
+  animation: loader-fade-in 1s ease-out infinite;
+}
+
+.loader-increase {
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background-color: currentcolor;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader-increase 2s infinite ease-in-out;
+  }
+  &:after {
+    animation-delay: -1s;
+  }
+}
+
+.loader-ninja {
+  border-top: 0.2rem solid currentcolor;
+  border-right: 0.2rem solid transparent;
+  animation: loader-ninja 1s linear infinite;
+  border-radius: 100%;
+  position: relative;
+}
