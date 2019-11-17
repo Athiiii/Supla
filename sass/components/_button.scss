@@ -59,6 +59,25 @@ button {
     @include buttonOutline($default-btn-color);
   }
 
+  &-link {
+    &,
+    &:visited,
+    &:link {
+      color: $color-link;
+      font-family: $font-familiy;
+      font-size: $font-small;
+      transition: color 0.2s;
+
+      &:hover {
+        color: lighten($color-link, 20%);
+      }
+
+      &:focus {
+        color: darken($color-link, 20%);
+      }
+    }
+  }
+
   /*
   * Rounded on the edge of the button
   */
