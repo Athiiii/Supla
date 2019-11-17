@@ -17,14 +17,17 @@ button {
   user-select: none;
   transition: border-color 0.3s;
   justify-content: center;
+  display: inline-block;
+
+  &:not([class*="btn-"]) {
+    @include createDefaultBorder($default-btn-color);
+  }
 }
 
 .btn {
-  @include createDefaultBorder($default-btn-color);
-
   //Remove default styling
-  &:link,
-  &:visited {
+  &:link:not(&-link),
+  &:visited:not(&-link) {
     text-decoration: none;
   }
 

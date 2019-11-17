@@ -7,15 +7,6 @@
   }
 }
 
-@keyframes loader-dots {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes loader-axe {
   0% {
     transform: rotate(0deg);
@@ -70,35 +61,8 @@
   }
 }
 
-@keyframes loader-moving-dots {
-  0% {
-    box-shadow: 0 2em 0 -0.2em currentcolor;
-  }
-  100% {
-    box-shadow: 0 1em 0 -0.2em currentcolor;
-  }
-}
-
-@keyframes loader-double {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes loader-ninja {
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-caution-tape {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -2em 0;
   }
 }
