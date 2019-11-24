@@ -71,6 +71,9 @@ button {
   .btn:not([class*="btn-"]),
   button:not([class*="btn-"]) {
     border: 0.08rem solid #e6e6e6; }
+  .btn > *,
+  button > * {
+    display: inline-block; }
 
 .btn {
   /*
@@ -90,7 +93,7 @@ button {
     background-color: #4caf50;
     border: 0.08rem solid #4caf50; }
     .btn-primary {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-primary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #6ec071; }
     .btn-primary:focus:not(.disabled), .btn-primary:active:not(.disabled) {
@@ -100,20 +103,20 @@ button {
     color: #4caf50;
     border: 0.08rem solid #4caf50; }
     .btn-outline-primary {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline-primary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #6ec071; }
     .btn-outline-primary:focus:not(.disabled), .btn-outline-primary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(76, 175, 80, 0.3); }
-    .btn-outline-primary {
-      transition: color 0.4s; }
-      .btn-outline-primary:hover {
-        color: #fff; }
-    .btn-outline-primary.a-btn-swipe {
+    .btn-outline-primary.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline-primary.a-btn-swipe, .btn-outline-primary.a-btn-swipe:before, .btn-outline-primary.a-btn-swipe:hover:before {
+      .btn-outline-primary.a-btn-left-to-right .btn-outline-primary {
+        transition: color 0.4s; }
+        .btn-outline-primary.a-btn-left-to-right .btn-outline-primary .btn-outline-primary:hover {
+          color: #fff; }
+      .btn-outline-primary.a-btn-left-to-right, .btn-outline-primary.a-btn-left-to-right:before, .btn-outline-primary.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline-primary.a-btn-swipe:before {
+      .btn-outline-primary.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -122,7 +125,7 @@ button {
         left: 0;
         background-color: #4caf50;
         transform: translateX(-100%); }
-      .btn-outline-primary.a-btn-swipe:hover:before {
+      .btn-outline-primary.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }
@@ -134,7 +137,7 @@ button {
     background-color: #2196f3;
     border: 0.08rem solid #2196f3; }
     .btn-secondary {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-secondary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #51adf6; }
     .btn-secondary:focus:not(.disabled), .btn-secondary:active:not(.disabled) {
@@ -144,20 +147,20 @@ button {
     color: #2196f3;
     border: 0.08rem solid #2196f3; }
     .btn-outline-secondary {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline-secondary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #51adf6; }
     .btn-outline-secondary:focus:not(.disabled), .btn-outline-secondary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(33, 150, 243, 0.3); }
-    .btn-outline-secondary {
-      transition: color 0.4s; }
-      .btn-outline-secondary:hover {
-        color: #fff; }
-    .btn-outline-secondary.a-btn-swipe {
+    .btn-outline-secondary.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline-secondary.a-btn-swipe, .btn-outline-secondary.a-btn-swipe:before, .btn-outline-secondary.a-btn-swipe:hover:before {
+      .btn-outline-secondary.a-btn-left-to-right .btn-outline-secondary {
+        transition: color 0.4s; }
+        .btn-outline-secondary.a-btn-left-to-right .btn-outline-secondary .btn-outline-secondary:hover {
+          color: #fff; }
+      .btn-outline-secondary.a-btn-left-to-right, .btn-outline-secondary.a-btn-left-to-right:before, .btn-outline-secondary.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline-secondary.a-btn-swipe:before {
+      .btn-outline-secondary.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -166,7 +169,7 @@ button {
         left: 0;
         background-color: #2196f3;
         transform: translateX(-100%); }
-      .btn-outline-secondary.a-btn-swipe:hover:before {
+      .btn-outline-secondary.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }
@@ -178,7 +181,7 @@ button {
     background-color: #c45cd6;
     border: 0.08rem solid #c45cd6; }
     .btn-tertiary {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-tertiary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #d385e0; }
     .btn-tertiary:focus:not(.disabled), .btn-tertiary:active:not(.disabled) {
@@ -188,20 +191,20 @@ button {
     color: #c45cd6;
     border: 0.08rem solid #c45cd6; }
     .btn-outline-tertiary {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline-tertiary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #d385e0; }
     .btn-outline-tertiary:focus:not(.disabled), .btn-outline-tertiary:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(196, 92, 214, 0.3); }
-    .btn-outline-tertiary {
-      transition: color 0.4s; }
-      .btn-outline-tertiary:hover {
-        color: #fff; }
-    .btn-outline-tertiary.a-btn-swipe {
+    .btn-outline-tertiary.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline-tertiary.a-btn-swipe, .btn-outline-tertiary.a-btn-swipe:before, .btn-outline-tertiary.a-btn-swipe:hover:before {
+      .btn-outline-tertiary.a-btn-left-to-right .btn-outline-tertiary {
+        transition: color 0.4s; }
+        .btn-outline-tertiary.a-btn-left-to-right .btn-outline-tertiary .btn-outline-tertiary:hover {
+          color: #fff; }
+      .btn-outline-tertiary.a-btn-left-to-right, .btn-outline-tertiary.a-btn-left-to-right:before, .btn-outline-tertiary.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline-tertiary.a-btn-swipe:before {
+      .btn-outline-tertiary.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -210,7 +213,7 @@ button {
         left: 0;
         background-color: #c45cd6;
         transform: translateX(-100%); }
-      .btn-outline-tertiary.a-btn-swipe:hover:before {
+      .btn-outline-tertiary.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }
@@ -222,7 +225,7 @@ button {
     background-color: #f44336;
     border: 0.08rem solid #f44336; }
     .btn-error {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-error:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #f77066; }
     .btn-error:focus:not(.disabled), .btn-error:active:not(.disabled) {
@@ -232,20 +235,20 @@ button {
     color: #f44336;
     border: 0.08rem solid #f44336; }
     .btn-outline-error {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline-error:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #f77066; }
     .btn-outline-error:focus:not(.disabled), .btn-outline-error:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(244, 67, 54, 0.3); }
-    .btn-outline-error {
-      transition: color 0.4s; }
-      .btn-outline-error:hover {
-        color: #fff; }
-    .btn-outline-error.a-btn-swipe {
+    .btn-outline-error.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline-error.a-btn-swipe, .btn-outline-error.a-btn-swipe:before, .btn-outline-error.a-btn-swipe:hover:before {
+      .btn-outline-error.a-btn-left-to-right .btn-outline-error {
+        transition: color 0.4s; }
+        .btn-outline-error.a-btn-left-to-right .btn-outline-error .btn-outline-error:hover {
+          color: #fff; }
+      .btn-outline-error.a-btn-left-to-right, .btn-outline-error.a-btn-left-to-right:before, .btn-outline-error.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline-error.a-btn-swipe:before {
+      .btn-outline-error.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -254,7 +257,7 @@ button {
         left: 0;
         background-color: #f44336;
         transform: translateX(-100%); }
-      .btn-outline-error.a-btn-swipe:hover:before {
+      .btn-outline-error.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }
@@ -266,7 +269,7 @@ button {
     background-color: #ff9800;
     border: 0.08rem solid #ff9800; }
     .btn-warning {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-warning:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #ffad33; }
     .btn-warning:focus:not(.disabled), .btn-warning:active:not(.disabled) {
@@ -276,20 +279,20 @@ button {
     color: #ff9800;
     border: 0.08rem solid #ff9800; }
     .btn-outline-warning {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline-warning:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #ffad33; }
     .btn-outline-warning:focus:not(.disabled), .btn-outline-warning:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(255, 152, 0, 0.3); }
-    .btn-outline-warning {
-      transition: color 0.4s; }
-      .btn-outline-warning:hover {
-        color: #fff; }
-    .btn-outline-warning.a-btn-swipe {
+    .btn-outline-warning.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline-warning.a-btn-swipe, .btn-outline-warning.a-btn-swipe:before, .btn-outline-warning.a-btn-swipe:hover:before {
+      .btn-outline-warning.a-btn-left-to-right .btn-outline-warning {
+        transition: color 0.4s; }
+        .btn-outline-warning.a-btn-left-to-right .btn-outline-warning .btn-outline-warning:hover {
+          color: #fff; }
+      .btn-outline-warning.a-btn-left-to-right, .btn-outline-warning.a-btn-left-to-right:before, .btn-outline-warning.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline-warning.a-btn-swipe:before {
+      .btn-outline-warning.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -298,7 +301,7 @@ button {
         left: 0;
         background-color: #ff9800;
         transform: translateX(-100%); }
-      .btn-outline-warning.a-btn-swipe:hover:before {
+      .btn-outline-warning.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }
@@ -310,7 +313,7 @@ button {
     background-color: #49b9b9;
     border: 0.08rem solid #49b9b9; }
     .btn-info {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-info:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #6ec7c7; }
     .btn-info:focus:not(.disabled), .btn-info:active:not(.disabled) {
@@ -320,20 +323,20 @@ button {
     color: #49b9b9;
     border: 0.08rem solid #49b9b9; }
     .btn-outline-info {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline-info:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #6ec7c7; }
     .btn-outline-info:focus:not(.disabled), .btn-outline-info:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(73, 185, 185, 0.3); }
-    .btn-outline-info {
-      transition: color 0.4s; }
-      .btn-outline-info:hover {
-        color: #fff; }
-    .btn-outline-info.a-btn-swipe {
+    .btn-outline-info.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline-info.a-btn-swipe, .btn-outline-info.a-btn-swipe:before, .btn-outline-info.a-btn-swipe:hover:before {
+      .btn-outline-info.a-btn-left-to-right .btn-outline-info {
+        transition: color 0.4s; }
+        .btn-outline-info.a-btn-left-to-right .btn-outline-info .btn-outline-info:hover {
+          color: #fff; }
+      .btn-outline-info.a-btn-left-to-right, .btn-outline-info.a-btn-left-to-right:before, .btn-outline-info.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline-info.a-btn-swipe:before {
+      .btn-outline-info.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -342,7 +345,7 @@ button {
         left: 0;
         background-color: #49b9b9;
         transform: translateX(-100%); }
-      .btn-outline-info.a-btn-swipe:hover:before {
+      .btn-outline-info.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }
@@ -354,20 +357,20 @@ button {
     color: #e6e6e6;
     border: 0.08rem solid #e6e6e6; }
     .btn-outline {
-      transition: background-color 0.3s, box-shadow 0.3s; }
+      transition: background-color 0.4s, box-shadow 0.4s; }
     .btn-outline:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: white; }
     .btn-outline:focus:not(.disabled), .btn-outline:active:not(.disabled) {
       box-shadow: 0 0 0 0.1rem rgba(230, 230, 230, 0.3); }
-    .btn-outline {
-      transition: color 0.4s; }
-      .btn-outline:hover {
-        color: #fff; }
-    .btn-outline.a-btn-swipe {
+    .btn-outline.a-btn-left-to-right {
       background-color: transparent; }
-      .btn-outline.a-btn-swipe, .btn-outline.a-btn-swipe:before, .btn-outline.a-btn-swipe:hover:before {
+      .btn-outline.a-btn-left-to-right .btn-outline {
+        transition: color 0.4s; }
+        .btn-outline.a-btn-left-to-right .btn-outline .btn-outline:hover {
+          color: #fff; }
+      .btn-outline.a-btn-left-to-right, .btn-outline.a-btn-left-to-right:before, .btn-outline.a-btn-left-to-right:hover:before {
         transition: 0.5s ease-in-out; }
-      .btn-outline.a-btn-swipe:before {
+      .btn-outline.a-btn-left-to-right:before {
         content: "";
         position: absolute;
         top: 0;
@@ -376,7 +379,7 @@ button {
         left: 0;
         background-color: #e6e6e6;
         transform: translateX(-100%); }
-      .btn-outline.a-btn-swipe:hover:before {
+      .btn-outline.a-btn-left-to-right:hover:before {
         transition: inherit;
         transform: translateX(0);
         z-index: -1; }

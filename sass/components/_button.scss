@@ -24,6 +24,10 @@ button {
   &:not([class*="btn-"]) {
     @include createDefaultBorder($default-btn-color);
   }
+
+  & > * {
+    display: inline-block;
+  }
 }
 
 .btn {

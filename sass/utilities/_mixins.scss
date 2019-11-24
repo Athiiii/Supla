@@ -4,7 +4,7 @@
 
   @include createDefaultBorder($color);
   @include buttonActions($color);
-  @include swipeAnim($color, $color-white);
+  @include swipeLeftToRightAnim($color, $color-white);
 
   &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: $color;
@@ -14,7 +14,7 @@
 
 @mixin buttonActions($color) {
   & {
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.4s, box-shadow 0.4s;
   }
 
   &:hover:not(.disabled):not([class*="a-btn"]) {

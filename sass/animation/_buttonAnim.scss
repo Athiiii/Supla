@@ -1,13 +1,16 @@
-@mixin swipeAnim($slidecolor, $textColor) {
-  & {
-    transition: color 0.4s;
-    &:hover {
-      color: $textColor;
-    }
-  }
+@mixin swipeLeftToRightAnim($slidecolor, $textColor) {
+  $parent: &;
 
-  &.a-btn-swipe {
+  &#{$prefix-animation}btn-left-to-right {
     background-color: transparent;
+
+    #{$parent} {
+      transition: color 0.4s;
+      #{$parent}:hover {
+        color: $textColor;
+      }
+    }
+
     &,
     &:before,
     &:hover:before {
