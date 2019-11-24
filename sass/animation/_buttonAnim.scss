@@ -1,32 +1,90 @@
 @mixin swipeLeftToRightAnim($slidecolor, $textColor) {
-  $parent: &;
   $swipeTransition: all 0.5s ease-in-out;
 
   &#{$prefix-animation}-btn-left-right {
     background-color: transparent;
 
-    &#{$parent}:hover {
-      color: $textColor;
-    }
+    @include changeTextColorOnHover($textColor);
 
     &,
     &:before,
     &:hover:before {
       transition: $swipeTransition;
     }
+
     &:before {
+      @include absolute-zero;
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
       background-color: $slidecolor;
       transform: translateX(-100%);
     }
+
     &:hover:before {
       transition: $swipeTransition;
       transform: translateX(0);
+      z-index: -1;
+    }
+  }
+}
+
+@mixin swipeDiagonal($slidecolor, $textColor) {
+  &#{$prefix-animation}-btn-diagonal {
+    background-color: transparent;
+
+    @include changeTextColorOnHover($textColor);
+
+    &:hover:before,
+    &:focus:before {
+      transform: rotate(0deg) translateZ(0);
+      opacity: 1;
+      transition-duration: 0.4s;
+      z-index: -1;
+    }
+
+    &:before {
+      content: "";
+      background-color: $slidecolor;
+      width: 200%;
+      height: 150%;
+      opacity: 0;
+      @include absolute($left: -50%, $bottom: 0);
+
+      transform-origin: left bottom;
+      transform: rotate(-90deg) translateZ(0);
+
+      will-change: transform, opacity;
+      transition-property: transform, opacity;
+      transition-duration: 0.6s;
+      transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68);
+    }
+  }
+}
+
+@mixin swipeCircle($slidecolor, $color) {
+  &#{$prefix-animation}-btn-circle {
+    background-color: transparent;
+
+    @include changeTextColorOnHover($color);
+
+    &:hover:before,
+    &:focus:before {
+      transition-duration: 0.3s;
+      transform: translate3d(-50%, -50%, 0) scale(1.5);
+    }
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      padding: 50%;
+      border-radius: 50%;
+      background-color: $slidecolor;
+
+      @include absolute($top: 50%, $left: 50%);
+
+      transform: translate3d(-50%, -50%, 0) scale(0);
+      transition: transform 0.2s ease-out;
       z-index: -1;
     }
   }

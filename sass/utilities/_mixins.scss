@@ -4,7 +4,11 @@
 
   @include createDefaultBorder($color);
   @include buttonActions($color);
+
+  //include animations
   @include swipeLeftToRightAnim($color, $color-white);
+  @include swipeDiagonal($color, $color-white);
+  @include swipeCircle($color, $color-white);
 
   &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: $color;
@@ -29,4 +33,35 @@
 
 @mixin createDefaultBorder($color) {
   border: $default-border $color;
+}
+
+@mixin absolute-zero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin changeTextColorOnHover($color) {
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin absolute($top: "", $bottom: "", $left: "", $right: "") {
+  position: absolute;
+
+  @if ($top != "") {
+    top: $top;
+  }
+  @if ($bottom != "") {
+    bottom: $bottom;
+  }
+  @if ($left != "") {
+    left: $left;
+  }
+  @if ($right != "") {
+    right: $right;
+  }
 }
