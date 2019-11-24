@@ -28,6 +28,11 @@ button {
   & > * {
     display: inline-block;
   }
+
+  // add margin for loaders inside of buttons
+  & > #{$prefix-loader} {
+    margin-right: 0.5rem;
+  }
 }
 
 .btn {

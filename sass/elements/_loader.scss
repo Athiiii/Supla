@@ -1,7 +1,7 @@
 /*
 * Loader
 */
-[class*="loader"] {
+[class*="#{str-slice($prefix-loader, 2)}"] {
   display: inline-block;
   width: 0.8em;
   height: 0.8em;
@@ -11,7 +11,7 @@
 }
 
 // default loader
-.loader {
+#{$prefix-loader} {
   border: 0.2rem solid currentcolor;
   border-bottom-color: transparent;
   border-radius: 50%;
@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.loader-axe {
+#{$prefix-loader}-axe {
   border: 0.2rem solid transparent;
   border-left-color: currentcolor;
   border-right-color: currentcolor;
@@ -27,7 +27,7 @@
   animation: 1s loader-axe linear infinite;
 }
 
-.loader-quarter {
+#{$prefix-loader}-quarter {
   border: 0.2rem solid transparent;
   border-top-color: currentcolor;
   border-radius: 50%;
@@ -47,13 +47,13 @@
   }
 }
 
-.loader-fade-in {
+#{$prefix-loader}-fade-in {
   border: 0.2rem solid currentcolor;
   border-radius: 50%;
   animation: loader-fade-in 1s ease-out infinite;
 }
 
-.loader-increase {
+#{$prefix-loader}-increase {
   position: relative;
   &:before,
   &:after {
@@ -73,7 +73,7 @@
   }
 }
 
-.loader-ninja {
+#{$prefix-loader}-ninja {
   border-top: 0.2rem solid currentcolor;
   border-right: 0.2rem solid transparent;
   animation: loader-ninja 1s linear infinite;

@@ -1,7 +1,7 @@
 @mixin swipeLeftToRightAnim($slidecolor, $textColor) {
   $parent: &;
 
-  &#{$prefix-animation}btn-left-to-right {
+  &#{$prefix-animation}-btn-left-to-right {
     background-color: transparent;
 
     #{$parent} {
