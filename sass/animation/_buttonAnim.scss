@@ -1,20 +1,18 @@
 @mixin swipeLeftToRightAnim($slidecolor, $textColor) {
   $parent: &;
+  $swipeTransition: all 0.5s ease-in-out;
 
-  &#{$prefix-animation}-btn-left-to-right {
+  &#{$prefix-animation}-btn-left-right {
     background-color: transparent;
 
-    #{$parent} {
-      transition: color 0.4s;
-      #{$parent}:hover {
-        color: $textColor;
-      }
+    &#{$parent}:hover {
+      color: $textColor;
     }
 
     &,
     &:before,
     &:hover:before {
-      transition: 0.5s ease-in-out;
+      transition: $swipeTransition;
     }
     &:before {
       content: "";
@@ -27,7 +25,7 @@
       transform: translateX(-100%);
     }
     &:hover:before {
-      transition: inherit;
+      transition: $swipeTransition;
       transform: translateX(0);
       z-index: -1;
     }
