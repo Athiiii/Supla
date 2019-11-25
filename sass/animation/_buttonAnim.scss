@@ -2,7 +2,7 @@ $swipeTransition: all 0.4s ease-in-out;
 
 @mixin swipeLeftToRightAnim($slidecolor, $textColor) {
   &#{$prefix-animation}-btn-left-right {
-    @include changeTextColorOnHover($textColor);
+    @include changeTextColorOnHoverOrFocus($textColor);
     @include swipeFromSide($slidecolor);
 
     &:before {
@@ -11,7 +11,7 @@ $swipeTransition: all 0.4s ease-in-out;
   }
 
   &#{$prefix-animation}-btn-right-left {
-    @include changeTextColorOnHover($textColor);
+    @include changeTextColorOnHoverOrFocus($textColor);
     @include swipeFromSide($slidecolor);
 
     &:before {
@@ -41,7 +41,8 @@ $swipeTransition: all 0.4s ease-in-out;
     background-color: $slidecolor;
   }
 
-  &:hover:before {
+  &:hover:before,
+  &:focus:before {
     transition: $swipeTransition;
     transform: translateX(0);
     z-index: -1;
@@ -52,7 +53,7 @@ $swipeTransition: all 0.4s ease-in-out;
   &#{$prefix-animation}-btn-diagonal {
     background-color: transparent;
 
-    @include changeTextColorOnHover($textColor);
+    @include changeTextColorOnHoverOrFocus($textColor);
 
     &:hover:before,
     &:focus:before {
@@ -85,7 +86,7 @@ $swipeTransition: all 0.4s ease-in-out;
   &#{$prefix-animation}-btn-circle {
     background-color: transparent;
 
-    @include changeTextColorOnHover($color);
+    @include changeTextColorOnHoverOrFocus($color);
 
     &:hover:before,
     &:focus:before {
@@ -112,7 +113,7 @@ $swipeTransition: all 0.4s ease-in-out;
 
 @mixin swipecenterHorizontal($slideColor, $color) {
   &#{$prefix-animation}-btn-center-horizontal {
-    @include changeTextColorOnHover($color);
+    @include changeTextColorOnHoverOrFocus($color);
 
     &:before {
       content: "";
@@ -145,7 +146,7 @@ $swipeTransition: all 0.4s ease-in-out;
 
 @mixin swipeCenterVertical($slideColor, $color) {
   &#{$prefix-animation}-btn-center-vertical {
-    @include changeTextColorOnHover($color);
+    @include changeTextColorOnHoverOrFocus($color);
 
     &:before {
       content: "";

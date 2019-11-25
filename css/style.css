@@ -119,20 +119,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(76, 175, 80, 0.3); }
     .btn-outline-primary.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline-primary.a-btn-left-right:hover {
+      .btn-outline-primary.a-btn-left-right:hover, .btn-outline-primary.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline-primary.a-btn-left-right, .btn-outline-primary.a-btn-left-right:before, .btn-outline-primary.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-primary.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #4caf50; }
-      .btn-outline-primary.a-btn-left-right:hover:before {
+      .btn-outline-primary.a-btn-left-right:hover:before, .btn-outline-primary.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -140,20 +140,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline-primary.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline-primary.a-btn-right-left:hover {
+      .btn-outline-primary.a-btn-right-left:hover, .btn-outline-primary.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline-primary.a-btn-right-left, .btn-outline-primary.a-btn-right-left:before, .btn-outline-primary.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-primary.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #4caf50; }
-      .btn-outline-primary.a-btn-right-left:hover:before {
+      .btn-outline-primary.a-btn-right-left:hover:before, .btn-outline-primary.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -161,7 +161,7 @@ button {
         transform: translateX(100%); }
     .btn-outline-primary.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline-primary.a-btn-diagonal:hover {
+      .btn-outline-primary.a-btn-diagonal:hover, .btn-outline-primary.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline-primary.a-btn-diagonal:hover:before, .btn-outline-primary.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -185,7 +185,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline-primary.a-btn-circle {
       background-color: transparent; }
-      .btn-outline-primary.a-btn-circle:hover {
+      .btn-outline-primary.a-btn-circle:hover, .btn-outline-primary.a-btn-circle:focus {
         color: #fff; }
       .btn-outline-primary.a-btn-circle:hover:before, .btn-outline-primary.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -203,7 +203,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline-primary.a-btn-center-horizontal:hover {
+    .btn-outline-primary.a-btn-center-horizontal:hover, .btn-outline-primary.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline-primary.a-btn-center-horizontal:before {
       content: "";
@@ -226,7 +226,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline-primary.a-btn-center-vertical:hover {
+    .btn-outline-primary.a-btn-center-vertical:hover, .btn-outline-primary.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline-primary.a-btn-center-vertical:before {
       content: "";
@@ -274,20 +274,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(33, 150, 243, 0.3); }
     .btn-outline-secondary.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline-secondary.a-btn-left-right:hover {
+      .btn-outline-secondary.a-btn-left-right:hover, .btn-outline-secondary.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline-secondary.a-btn-left-right, .btn-outline-secondary.a-btn-left-right:before, .btn-outline-secondary.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-secondary.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #2196f3; }
-      .btn-outline-secondary.a-btn-left-right:hover:before {
+      .btn-outline-secondary.a-btn-left-right:hover:before, .btn-outline-secondary.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -295,20 +295,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline-secondary.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline-secondary.a-btn-right-left:hover {
+      .btn-outline-secondary.a-btn-right-left:hover, .btn-outline-secondary.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline-secondary.a-btn-right-left, .btn-outline-secondary.a-btn-right-left:before, .btn-outline-secondary.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-secondary.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #2196f3; }
-      .btn-outline-secondary.a-btn-right-left:hover:before {
+      .btn-outline-secondary.a-btn-right-left:hover:before, .btn-outline-secondary.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -316,7 +316,7 @@ button {
         transform: translateX(100%); }
     .btn-outline-secondary.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline-secondary.a-btn-diagonal:hover {
+      .btn-outline-secondary.a-btn-diagonal:hover, .btn-outline-secondary.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline-secondary.a-btn-diagonal:hover:before, .btn-outline-secondary.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -340,7 +340,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline-secondary.a-btn-circle {
       background-color: transparent; }
-      .btn-outline-secondary.a-btn-circle:hover {
+      .btn-outline-secondary.a-btn-circle:hover, .btn-outline-secondary.a-btn-circle:focus {
         color: #fff; }
       .btn-outline-secondary.a-btn-circle:hover:before, .btn-outline-secondary.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -358,7 +358,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline-secondary.a-btn-center-horizontal:hover {
+    .btn-outline-secondary.a-btn-center-horizontal:hover, .btn-outline-secondary.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline-secondary.a-btn-center-horizontal:before {
       content: "";
@@ -381,7 +381,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline-secondary.a-btn-center-vertical:hover {
+    .btn-outline-secondary.a-btn-center-vertical:hover, .btn-outline-secondary.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline-secondary.a-btn-center-vertical:before {
       content: "";
@@ -429,20 +429,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(196, 92, 214, 0.3); }
     .btn-outline-tertiary.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline-tertiary.a-btn-left-right:hover {
+      .btn-outline-tertiary.a-btn-left-right:hover, .btn-outline-tertiary.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline-tertiary.a-btn-left-right, .btn-outline-tertiary.a-btn-left-right:before, .btn-outline-tertiary.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-tertiary.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #c45cd6; }
-      .btn-outline-tertiary.a-btn-left-right:hover:before {
+      .btn-outline-tertiary.a-btn-left-right:hover:before, .btn-outline-tertiary.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -450,20 +450,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline-tertiary.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline-tertiary.a-btn-right-left:hover {
+      .btn-outline-tertiary.a-btn-right-left:hover, .btn-outline-tertiary.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline-tertiary.a-btn-right-left, .btn-outline-tertiary.a-btn-right-left:before, .btn-outline-tertiary.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-tertiary.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #c45cd6; }
-      .btn-outline-tertiary.a-btn-right-left:hover:before {
+      .btn-outline-tertiary.a-btn-right-left:hover:before, .btn-outline-tertiary.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -471,7 +471,7 @@ button {
         transform: translateX(100%); }
     .btn-outline-tertiary.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline-tertiary.a-btn-diagonal:hover {
+      .btn-outline-tertiary.a-btn-diagonal:hover, .btn-outline-tertiary.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline-tertiary.a-btn-diagonal:hover:before, .btn-outline-tertiary.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -495,7 +495,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline-tertiary.a-btn-circle {
       background-color: transparent; }
-      .btn-outline-tertiary.a-btn-circle:hover {
+      .btn-outline-tertiary.a-btn-circle:hover, .btn-outline-tertiary.a-btn-circle:focus {
         color: #fff; }
       .btn-outline-tertiary.a-btn-circle:hover:before, .btn-outline-tertiary.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -513,7 +513,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline-tertiary.a-btn-center-horizontal:hover {
+    .btn-outline-tertiary.a-btn-center-horizontal:hover, .btn-outline-tertiary.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline-tertiary.a-btn-center-horizontal:before {
       content: "";
@@ -536,7 +536,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline-tertiary.a-btn-center-vertical:hover {
+    .btn-outline-tertiary.a-btn-center-vertical:hover, .btn-outline-tertiary.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline-tertiary.a-btn-center-vertical:before {
       content: "";
@@ -584,20 +584,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(244, 67, 54, 0.3); }
     .btn-outline-error.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline-error.a-btn-left-right:hover {
+      .btn-outline-error.a-btn-left-right:hover, .btn-outline-error.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline-error.a-btn-left-right, .btn-outline-error.a-btn-left-right:before, .btn-outline-error.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-error.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #f44336; }
-      .btn-outline-error.a-btn-left-right:hover:before {
+      .btn-outline-error.a-btn-left-right:hover:before, .btn-outline-error.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -605,20 +605,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline-error.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline-error.a-btn-right-left:hover {
+      .btn-outline-error.a-btn-right-left:hover, .btn-outline-error.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline-error.a-btn-right-left, .btn-outline-error.a-btn-right-left:before, .btn-outline-error.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-error.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #f44336; }
-      .btn-outline-error.a-btn-right-left:hover:before {
+      .btn-outline-error.a-btn-right-left:hover:before, .btn-outline-error.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -626,7 +626,7 @@ button {
         transform: translateX(100%); }
     .btn-outline-error.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline-error.a-btn-diagonal:hover {
+      .btn-outline-error.a-btn-diagonal:hover, .btn-outline-error.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline-error.a-btn-diagonal:hover:before, .btn-outline-error.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -650,7 +650,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline-error.a-btn-circle {
       background-color: transparent; }
-      .btn-outline-error.a-btn-circle:hover {
+      .btn-outline-error.a-btn-circle:hover, .btn-outline-error.a-btn-circle:focus {
         color: #fff; }
       .btn-outline-error.a-btn-circle:hover:before, .btn-outline-error.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -668,7 +668,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline-error.a-btn-center-horizontal:hover {
+    .btn-outline-error.a-btn-center-horizontal:hover, .btn-outline-error.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline-error.a-btn-center-horizontal:before {
       content: "";
@@ -691,7 +691,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline-error.a-btn-center-vertical:hover {
+    .btn-outline-error.a-btn-center-vertical:hover, .btn-outline-error.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline-error.a-btn-center-vertical:before {
       content: "";
@@ -739,20 +739,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(255, 152, 0, 0.3); }
     .btn-outline-warning.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline-warning.a-btn-left-right:hover {
+      .btn-outline-warning.a-btn-left-right:hover, .btn-outline-warning.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline-warning.a-btn-left-right, .btn-outline-warning.a-btn-left-right:before, .btn-outline-warning.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-warning.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #ff9800; }
-      .btn-outline-warning.a-btn-left-right:hover:before {
+      .btn-outline-warning.a-btn-left-right:hover:before, .btn-outline-warning.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -760,20 +760,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline-warning.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline-warning.a-btn-right-left:hover {
+      .btn-outline-warning.a-btn-right-left:hover, .btn-outline-warning.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline-warning.a-btn-right-left, .btn-outline-warning.a-btn-right-left:before, .btn-outline-warning.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-warning.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #ff9800; }
-      .btn-outline-warning.a-btn-right-left:hover:before {
+      .btn-outline-warning.a-btn-right-left:hover:before, .btn-outline-warning.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -781,7 +781,7 @@ button {
         transform: translateX(100%); }
     .btn-outline-warning.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline-warning.a-btn-diagonal:hover {
+      .btn-outline-warning.a-btn-diagonal:hover, .btn-outline-warning.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline-warning.a-btn-diagonal:hover:before, .btn-outline-warning.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -805,7 +805,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline-warning.a-btn-circle {
       background-color: transparent; }
-      .btn-outline-warning.a-btn-circle:hover {
+      .btn-outline-warning.a-btn-circle:hover, .btn-outline-warning.a-btn-circle:focus {
         color: #fff; }
       .btn-outline-warning.a-btn-circle:hover:before, .btn-outline-warning.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -823,7 +823,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline-warning.a-btn-center-horizontal:hover {
+    .btn-outline-warning.a-btn-center-horizontal:hover, .btn-outline-warning.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline-warning.a-btn-center-horizontal:before {
       content: "";
@@ -846,7 +846,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline-warning.a-btn-center-vertical:hover {
+    .btn-outline-warning.a-btn-center-vertical:hover, .btn-outline-warning.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline-warning.a-btn-center-vertical:before {
       content: "";
@@ -894,20 +894,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(73, 185, 185, 0.3); }
     .btn-outline-info.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline-info.a-btn-left-right:hover {
+      .btn-outline-info.a-btn-left-right:hover, .btn-outline-info.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline-info.a-btn-left-right, .btn-outline-info.a-btn-left-right:before, .btn-outline-info.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-info.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #49b9b9; }
-      .btn-outline-info.a-btn-left-right:hover:before {
+      .btn-outline-info.a-btn-left-right:hover:before, .btn-outline-info.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -915,20 +915,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline-info.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline-info.a-btn-right-left:hover {
+      .btn-outline-info.a-btn-right-left:hover, .btn-outline-info.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline-info.a-btn-right-left, .btn-outline-info.a-btn-right-left:before, .btn-outline-info.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline-info.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #49b9b9; }
-      .btn-outline-info.a-btn-right-left:hover:before {
+      .btn-outline-info.a-btn-right-left:hover:before, .btn-outline-info.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -936,7 +936,7 @@ button {
         transform: translateX(100%); }
     .btn-outline-info.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline-info.a-btn-diagonal:hover {
+      .btn-outline-info.a-btn-diagonal:hover, .btn-outline-info.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline-info.a-btn-diagonal:hover:before, .btn-outline-info.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -960,7 +960,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline-info.a-btn-circle {
       background-color: transparent; }
-      .btn-outline-info.a-btn-circle:hover {
+      .btn-outline-info.a-btn-circle:hover, .btn-outline-info.a-btn-circle:focus {
         color: #fff; }
       .btn-outline-info.a-btn-circle:hover:before, .btn-outline-info.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -978,7 +978,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline-info.a-btn-center-horizontal:hover {
+    .btn-outline-info.a-btn-center-horizontal:hover, .btn-outline-info.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline-info.a-btn-center-horizontal:before {
       content: "";
@@ -1001,7 +1001,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline-info.a-btn-center-vertical:hover {
+    .btn-outline-info.a-btn-center-vertical:hover, .btn-outline-info.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline-info.a-btn-center-vertical:before {
       content: "";
@@ -1039,20 +1039,20 @@ button {
       box-shadow: 0 0 0 0.15rem rgba(230, 230, 230, 0.3); }
     .btn-outline.a-btn-left-right {
       background-color: transparent; }
-      .btn-outline.a-btn-left-right:hover {
+      .btn-outline.a-btn-left-right:hover, .btn-outline.a-btn-left-right:focus {
         color: #fff; }
       .btn-outline.a-btn-left-right, .btn-outline.a-btn-left-right:before, .btn-outline.a-btn-left-right:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline.a-btn-left-right:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #e6e6e6; }
-      .btn-outline.a-btn-left-right:hover:before {
+      .btn-outline.a-btn-left-right:hover:before, .btn-outline.a-btn-left-right:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -1060,20 +1060,20 @@ button {
         transform: translateX(-100%); }
     .btn-outline.a-btn-right-left {
       background-color: transparent; }
-      .btn-outline.a-btn-right-left:hover {
+      .btn-outline.a-btn-right-left:hover, .btn-outline.a-btn-right-left:focus {
         color: #fff; }
       .btn-outline.a-btn-right-left, .btn-outline.a-btn-right-left:before, .btn-outline.a-btn-right-left:hover:before {
         transition: all 0.4s ease-in-out; }
       .btn-outline.a-btn-right-left:before {
         position: absolute;
         top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
+        right: 0;
         content: "";
         position: absolute;
         background-color: #e6e6e6; }
-      .btn-outline.a-btn-right-left:hover:before {
+      .btn-outline.a-btn-right-left:hover:before, .btn-outline.a-btn-right-left:focus:before {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
@@ -1081,7 +1081,7 @@ button {
         transform: translateX(100%); }
     .btn-outline.a-btn-diagonal {
       background-color: transparent; }
-      .btn-outline.a-btn-diagonal:hover {
+      .btn-outline.a-btn-diagonal:hover, .btn-outline.a-btn-diagonal:focus {
         color: #fff; }
       .btn-outline.a-btn-diagonal:hover:before, .btn-outline.a-btn-diagonal:focus:before {
         transform: rotate(0deg) translateZ(0);
@@ -1105,7 +1105,7 @@ button {
         transition-timing-function: cubic-bezier(0.01, -0.24, 0, 0.68); }
     .btn-outline.a-btn-circle {
       background-color: transparent; }
-      .btn-outline.a-btn-circle:hover {
+      .btn-outline.a-btn-circle:hover, .btn-outline.a-btn-circle:focus {
         color: #fff; }
       .btn-outline.a-btn-circle:hover:before, .btn-outline.a-btn-circle:focus:before {
         transition-duration: 0.3s;
@@ -1123,7 +1123,7 @@ button {
         transform: translate3d(-50%, -50%, 0) scale(0);
         transition: all 0.4s ease-in-out;
         z-index: -1; }
-    .btn-outline.a-btn-center-horizontal:hover {
+    .btn-outline.a-btn-center-horizontal:hover, .btn-outline.a-btn-center-horizontal:focus {
       color: #fff; }
     .btn-outline.a-btn-center-horizontal:before {
       content: "";
@@ -1146,7 +1146,7 @@ button {
       height: 110%;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s; }
-    .btn-outline.a-btn-center-vertical:hover {
+    .btn-outline.a-btn-center-vertical:hover, .btn-outline.a-btn-center-vertical:focus {
       color: #fff; }
     .btn-outline.a-btn-center-vertical:before {
       content: "";

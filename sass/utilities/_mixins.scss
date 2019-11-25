@@ -33,20 +33,21 @@
   }
 }
 
-@mixin createDefaultBorder($color) {
-  border: $default-border $color;
+@mixin createDefaultBorder($color: "") {
+  @if ($color == "") {
+    border: $default-border currentColor;
+  } @else {
+    border: $default-border $color;
+  }
 }
 
 @mixin absolute-zero {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  @include absolute($top: 0, $bottom: 0, $left: 0, $right: 0);
 }
 
-@mixin changeTextColorOnHover($color) {
-  &:hover {
+@mixin changeTextColorOnHoverOrFocus($color) {
+  &:hover,
+  &:focus {
     color: $color;
   }
 }
