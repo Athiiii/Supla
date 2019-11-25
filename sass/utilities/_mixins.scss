@@ -1,11 +1,19 @@
 @mixin buttonOutline($color) {
-  background-color: $color-white;
+  background-color: transparent;
   color: $color;
-  border: $default-border $color;
 
+  @include createDefaultBorder($color);
   @include buttonActions($color);
 
-  &:hover:not(.disabled) {
+  //include animations
+  @include swipeLeftToRightAnim($color, $color-white);
+  @include swipeDiagonal($color, $color-white);
+  @include swipeCircle($color, $color-white);
+  @include swipecenterHorizontal($color, $color-white);
+  @include swipeCenterVertical($color, $color-white);
+  @include swipeTopBottom($color, $color-white);
+
+  &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: $color;
     color: $color-white;
   }
@@ -13,19 +21,51 @@
 
 @mixin buttonActions($color) {
   & {
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.4s, box-shadow 0.4s, color 0.4s;
   }
 
-  &:hover:not(.disabled) {
+  &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: lighten($color, 10);
   }
 
   &:focus:not(.disabled),
   &:active:not(.disabled) {
-    box-shadow: 0 0 0 0.1rem rgba($color, 0.3);
+    box-shadow: 0 0 0 0.15rem rgba($color, 0.3);
   }
 }
 
-@mixin createDefaultBorder($color) {
-  border: $default-border $color;
+@mixin createDefaultBorder($color: "") {
+  @if ($color == "") {
+    border: $default-border currentColor;
+  } @else {
+    border: $default-border $color;
+  }
+}
+
+@mixin absolute-zero {
+  @include absolute($top: 0, $bottom: 0, $left: 0, $right: 0);
+}
+
+@mixin changeTextColorOnHoverOrFocus($color) {
+  &:hover,
+  &:focus {
+    color: $color;
+  }
+}
+
+@mixin absolute($top: "", $bottom: "", $left: "", $right: "") {
+  position: absolute;
+
+  @if ($top != "") {
+    top: $top;
+  }
+  @if ($bottom != "") {
+    bottom: $bottom;
+  }
+  @if ($left != "") {
+    left: $left;
+  }
+  @if ($right != "") {
+    right: $right;
+  }
 }
