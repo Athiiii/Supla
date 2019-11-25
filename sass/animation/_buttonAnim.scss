@@ -49,11 +49,11 @@ $swipeTransition: all 0.4s ease-in-out;
   }
 }
 
-@mixin swipeDiagonal($slidecolor, $textColor) {
+@mixin swipeDiagonal($slidecolor, $color) {
   &#{$prefix-animation}-btn-diagonal {
     background-color: transparent;
 
-    @include changeTextColorOnHoverOrFocus($textColor);
+    @include changeTextColorOnHoverOrFocus($color);
 
     &:hover:before,
     &:focus:before {
@@ -174,5 +174,53 @@ $swipeTransition: all 0.4s ease-in-out;
       transition-duration: 0.4s, 0.4s;
       transition-delay: 0s;
     }
+  }
+}
+
+@mixin swipeTopBottom($slideColor, $color) {
+  &#{$prefix-animation}-btn-top-bottom {
+    @include changeTextColorOnHoverOrFocus($color);
+    @include swipeFromTopBottom($slideColor);
+
+    &:before {
+      @include absolute($top: 0, $left: 0);
+    }
+  }
+
+  &#{$prefix-animation}-btn-bottom-top {
+    @include changeTextColorOnHoverOrFocus($color);
+    @include swipeFromTopBottom($slideColor);
+  }
+}
+
+/*
+* Put redundant code for 
+* a-btn-top-bottom & a-btn-bottom-top
+* buttons
+*/
+@mixin swipeFromTopBottom($slideColor) {
+  &:before {
+    content: "";
+    z-index: -1;
+    width: 110%;
+    height: 0;
+    opacity: 0;
+
+    @include absolute($bottom: 0, $left: 0);
+
+    will-change: opacity, height;
+    transition-property: opacity, height;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0.3s, 0s;
+    transition-timing-function: cubic-bezier(0, 0, 0.11, 1.24);
+    background-color: $slideColor;
+  }
+
+  &:hover:before,
+  &:focus:before {
+    opacity: 1;
+    height: 110%;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0s;
   }
 }
