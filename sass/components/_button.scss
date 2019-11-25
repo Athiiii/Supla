@@ -31,7 +31,7 @@ button {
   }
 
   // add margin for loaders inside of buttons
-  & > #{$prefix-loader} {
+  & > [class*="#{str-slice($prefix-loader, 2)}"] {
     margin-right: 0.5rem;
   }
 }

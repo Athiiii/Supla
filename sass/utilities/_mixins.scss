@@ -10,6 +10,7 @@
   @include swipeDiagonal($color, $color-white);
   @include swipeCircle($color, $color-white);
   @include swipecenterHorizontal($color, $color-white);
+  @include swipeCenterVertical($color, $color-white);
 
   &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: $color;

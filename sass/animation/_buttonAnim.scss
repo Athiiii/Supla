@@ -127,8 +127,8 @@ $swipeTransition: all 0.4s ease-in-out;
       will-change: opacity, height;
 
       transition-property: opacity, height;
-      transition-duration: 0.25s, 0.25s;
-      transition-delay: 0.15s, 0s;
+      transition-duration: 0.4s, 0.4s;
+      transition-delay: 0.3s, 0s;
       transition-timing-function: cubic-bezier(0, 0, 0.49, 1.37);
       background-color: $slideColor;
     }
@@ -137,7 +137,40 @@ $swipeTransition: all 0.4s ease-in-out;
     &:focus:before {
       opacity: 1;
       height: 110%;
-      transition-duration: 0.25s, 0.4s;
+      transition-duration: 0.4s, 0.4s;
+      transition-delay: 0s;
+    }
+  }
+}
+
+@mixin swipeCenterVertical($slideColor, $color) {
+  &#{$prefix-animation}-btn-center-vertical {
+    @include changeTextColorOnHover($color);
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 110%;
+      opacity: 0;
+
+      @include absolute($top: 50%, $left: 50%);
+
+      transform: translate3d(-50%, -50%, 0);
+      will-change: opacity, width;
+
+      transition-property: opacity, width;
+      transition-duration: 0.4s, 0.4s;
+      transition-delay: 0.3s, 0s;
+      transition-timing-function: cubic-bezier(0, 0, 0.49, 1.37);
+      z-index: -1;
+      background-color: $slideColor;
+    }
+
+    &:hover:before,
+    &:focus:before {
+      opacity: 1;
+      width: 110%;
+      transition-duration: 0.4s, 0.4s;
       transition-delay: 0s;
     }
   }
