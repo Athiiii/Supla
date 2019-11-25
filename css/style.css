@@ -1,3 +1,8 @@
+/*
+* Put redundant code for 
+* a-btn-left-right & a-btn-right-left
+* buttons
+*/
 @keyframes loader {
   0% {
     transform: rotate(0deg); }
@@ -117,7 +122,7 @@ button {
       .btn-outline-primary.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline-primary.a-btn-left-right, .btn-outline-primary.a-btn-left-right:before, .btn-outline-primary.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline-primary.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -126,12 +131,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #4caf50;
-        transform: translateX(-100%); }
+        background-color: #4caf50; }
       .btn-outline-primary.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline-primary.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline-primary.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline-primary.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline-primary.a-btn-right-left, .btn-outline-primary.a-btn-right-left:before, .btn-outline-primary.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline-primary.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #4caf50; }
+      .btn-outline-primary.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline-primary.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline-primary.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline-primary.a-btn-diagonal:hover {
@@ -174,7 +201,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline-primary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #4caf50;
@@ -204,7 +231,7 @@ button {
       .btn-outline-secondary.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline-secondary.a-btn-left-right, .btn-outline-secondary.a-btn-left-right:before, .btn-outline-secondary.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline-secondary.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -213,12 +240,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #2196f3;
-        transform: translateX(-100%); }
+        background-color: #2196f3; }
       .btn-outline-secondary.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline-secondary.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline-secondary.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline-secondary.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline-secondary.a-btn-right-left, .btn-outline-secondary.a-btn-right-left:before, .btn-outline-secondary.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline-secondary.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #2196f3; }
+      .btn-outline-secondary.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline-secondary.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline-secondary.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline-secondary.a-btn-diagonal:hover {
@@ -261,7 +310,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline-secondary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #2196f3;
@@ -291,7 +340,7 @@ button {
       .btn-outline-tertiary.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline-tertiary.a-btn-left-right, .btn-outline-tertiary.a-btn-left-right:before, .btn-outline-tertiary.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline-tertiary.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -300,12 +349,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #c45cd6;
-        transform: translateX(-100%); }
+        background-color: #c45cd6; }
       .btn-outline-tertiary.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline-tertiary.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline-tertiary.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline-tertiary.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline-tertiary.a-btn-right-left, .btn-outline-tertiary.a-btn-right-left:before, .btn-outline-tertiary.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline-tertiary.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #c45cd6; }
+      .btn-outline-tertiary.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline-tertiary.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline-tertiary.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline-tertiary.a-btn-diagonal:hover {
@@ -348,7 +419,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline-tertiary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #c45cd6;
@@ -378,7 +449,7 @@ button {
       .btn-outline-error.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline-error.a-btn-left-right, .btn-outline-error.a-btn-left-right:before, .btn-outline-error.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline-error.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -387,12 +458,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #f44336;
-        transform: translateX(-100%); }
+        background-color: #f44336; }
       .btn-outline-error.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline-error.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline-error.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline-error.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline-error.a-btn-right-left, .btn-outline-error.a-btn-right-left:before, .btn-outline-error.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline-error.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #f44336; }
+      .btn-outline-error.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline-error.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline-error.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline-error.a-btn-diagonal:hover {
@@ -435,7 +528,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline-error:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #f44336;
@@ -465,7 +558,7 @@ button {
       .btn-outline-warning.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline-warning.a-btn-left-right, .btn-outline-warning.a-btn-left-right:before, .btn-outline-warning.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline-warning.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -474,12 +567,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #ff9800;
-        transform: translateX(-100%); }
+        background-color: #ff9800; }
       .btn-outline-warning.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline-warning.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline-warning.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline-warning.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline-warning.a-btn-right-left, .btn-outline-warning.a-btn-right-left:before, .btn-outline-warning.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline-warning.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #ff9800; }
+      .btn-outline-warning.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline-warning.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline-warning.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline-warning.a-btn-diagonal:hover {
@@ -522,7 +637,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline-warning:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #ff9800;
@@ -552,7 +667,7 @@ button {
       .btn-outline-info.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline-info.a-btn-left-right, .btn-outline-info.a-btn-left-right:before, .btn-outline-info.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline-info.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -561,12 +676,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #49b9b9;
-        transform: translateX(-100%); }
+        background-color: #49b9b9; }
       .btn-outline-info.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline-info.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline-info.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline-info.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline-info.a-btn-right-left, .btn-outline-info.a-btn-right-left:before, .btn-outline-info.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline-info.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #49b9b9; }
+      .btn-outline-info.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline-info.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline-info.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline-info.a-btn-diagonal:hover {
@@ -609,7 +746,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline-info:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #49b9b9;
@@ -629,7 +766,7 @@ button {
       .btn-outline.a-btn-left-right:hover {
         color: #fff; }
       .btn-outline.a-btn-left-right, .btn-outline.a-btn-left-right:before, .btn-outline.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .btn-outline.a-btn-left-right:before {
         position: absolute;
         top: 0;
@@ -638,12 +775,34 @@ button {
         left: 0;
         content: "";
         position: absolute;
-        background-color: #e6e6e6;
-        transform: translateX(-100%); }
+        background-color: #e6e6e6; }
       .btn-outline.a-btn-left-right:hover:before {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform: translateX(0);
         z-index: -1; }
+      .btn-outline.a-btn-left-right:before {
+        transform: translateX(-100%); }
+    .btn-outline.a-btn-right-left {
+      background-color: transparent; }
+      .btn-outline.a-btn-right-left:hover {
+        color: #fff; }
+      .btn-outline.a-btn-right-left, .btn-outline.a-btn-right-left:before, .btn-outline.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out; }
+      .btn-outline.a-btn-right-left:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color: #e6e6e6; }
+      .btn-outline.a-btn-right-left:hover:before {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(0);
+        z-index: -1; }
+      .btn-outline.a-btn-right-left:before {
+        transform: translateX(100%); }
     .btn-outline.a-btn-diagonal {
       background-color: transparent; }
       .btn-outline.a-btn-diagonal:hover {
@@ -686,7 +845,7 @@ button {
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) scale(0);
-        transition: transform 0.2s ease-out;
+        transition: all 0.4s ease-in-out;
         z-index: -1; }
     .btn-outline:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #e6e6e6;
