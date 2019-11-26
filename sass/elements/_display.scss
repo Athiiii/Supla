@@ -1,0 +1,37 @@
+#{$prefix-display} {
+  &-block {
+    display: block;
+  }
+
+  &-inline {
+    display: inline;
+
+    &-block {
+      display: inline-block;
+    }
+
+    &-flex {
+      display: inline-flex;
+    }
+
+    &-table {
+      display: inline-table;
+    }
+  }
+
+  &-flex {
+    display: flex;
+  }
+
+  &-grid {
+    display: list-item;
+  }
+
+  &-none {
+    display: none;
+  }
+
+  &-table {
+    display: table;
+  }
+}
