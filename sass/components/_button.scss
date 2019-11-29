@@ -8,7 +8,7 @@ $default-btn-color: darken($color-white, 10%);
 button {
   padding: 0.4rem 0.7rem;
   margin: 0.1rem 0;
-  font-family: $font-familiy;
+  font-family: $font-family;
   font-weight: $font-regular;
   font-size: $font-small;
   color: $color-black;
@@ -78,7 +78,7 @@ button {
     &:visited,
     &:link {
       color: $color-link;
-      font-family: $font-familiy;
+      font-family: $font-family;
       font-size: $font-small;
       transition: color 0.2s;
       background-color: transparent;
