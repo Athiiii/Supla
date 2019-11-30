@@ -1,5 +1,5 @@
-// Colors
 $default-btn-color: darken($color-white, 10%);
+$default-btn-size: $font-medium;
 
 /*
 * Button Component
@@ -8,9 +8,9 @@ $default-btn-color: darken($color-white, 10%);
 button {
   padding: 0.4rem 0.7rem;
   margin: 0.1rem 0;
-  font-family: $font-familiy;
+  font-family: $font-family;
   font-weight: $font-regular;
-  font-size: $font-small;
+  font-size: $default-btn-size;
   color: $color-black;
   background-color: $color-white;
   cursor: pointer;
@@ -56,21 +56,23 @@ button {
   * Generate color modifiers
   */
   @each $key, $color in $colors {
+    $inverted-color: setTextColorOnBackground($color);
+
     &-#{$key} {
-      color: $color-white;
+      color: $inverted-color;
       background-color: $color;
 
-      @include createDefaultBorder($color);
-      @include buttonActions($color);
+      @include createDefaultBorder($inverted-color);
+      @include buttonActions($color, $inverted-color);
     }
 
     &-outline-#{$key} {
-      @include buttonOutline($color);
+      @include buttonOutline($color, $inverted-color);
     }
   }
 
   &-outline {
-    @include buttonOutline($default-btn-color);
+    @include buttonOutline($default-btn-color, $color-black);
   }
 
   &-link {
@@ -78,11 +80,12 @@ button {
     &:visited,
     &:link {
       color: $color-link;
-      font-family: $font-familiy;
-      font-size: $font-small;
+      font-family: $font-family;
+      font-size: $default-btn-size;
       transition: color 0.2s;
       background-color: transparent;
       text-decoration: underline;
+      display: inline-block;
 
       &:hover {
         color: lighten($color-link, 20%);

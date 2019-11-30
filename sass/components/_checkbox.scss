@@ -1,0 +1,100 @@
+$border-tick-size: 0.4rem;
+$default-size: $font-medium;
+
+.checkbox {
+  // hide it
+  @include absolute();
+
+  // prevent override of disable
+  opacity: 0 !important;
+
+  cursor: none;
+  pointer-events: none;
+  transition: background-color 0.2s;
+
+  & + label {
+    position: relative;
+    font-size: $default-size;
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding-left: $default-size + 0.2rem;
+    cursor: pointer;
+  }
+
+  // new box
+  & + label:before {
+    content: "";
+    @include absolute($top: 0, $left: 0);
+    transform: translateY(30%);
+    margin-right: 0.4rem;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: -0.2rem;
+    width: $default-size;
+    height: $default-size;
+    background: $color-grey;
+  }
+
+  // Box transition
+  & + label:before {
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: $color-primary;
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: $color-primary;
+  }
+
+  @each $key, $color in $colors {
+    &.#{$key} {
+      // Box hover
+      &:hover + label:before {
+        background: $color;
+      }
+
+      // Box checked
+      &:checked + label:before {
+        background: $color;
+      }
+    }
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.12);
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: $color-grey-dark;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: $color-grey-dark;
+  }
+
+  // add transition
+  & + label:after {
+    content: "";
+    @include absolute($top: 0.6rem, $left: 0.6rem);
+    width: 0.5rem;
+    height: 1rem;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    opacity: 1;
+  }
+}

@@ -1,43 +1,52 @@
-@mixin buttonOutline($color) {
+@mixin buttonOutline($color, $transitionColor) {
   background-color: transparent;
   color: $color;
 
   @include createDefaultBorder($color);
-  @include buttonActions($color);
+  @include buttonActions($color, $transitionColor);
 
   //include animations
-  @include swipeLeftToRightAnim($color, $color-white);
-  @include swipeDiagonal($color, $color-white);
-  @include swipeCircle($color, $color-white);
-  @include swipecenterHorizontal($color, $color-white);
-  @include swipeCenterVertical($color, $color-white);
-  @include swipeTopBottom($color, $color-white);
+  @include swipeLeftToRightAnim($color, $transitionColor);
+  @include swipeDiagonal($color, $transitionColor);
+  @include swipeCircle($color, $transitionColor);
+  @include swipecenterHorizontal($color, $transitionColor);
+  @include swipeCenterVertical($color, $transitionColor);
+  @include swipeTopBottom($color, $transitionColor);
 
   &:hover:not(.disabled):not([class*="a-btn"]) {
     background-color: $color;
-    color: $color-white;
+    color: $transitionColor;
   }
 }
 
-@mixin buttonActions($color) {
+@mixin buttonActions($color, $background) {
   & {
     transition: background-color 0.4s, box-shadow 0.4s, color 0.4s;
   }
 
   &:hover:not(.disabled):not([class*="a-btn"]) {
-    background-color: lighten($color, 10);
+    @if $background == $color-black {
+      background-color: lighten($color-grey-light, 20%);
+    } @else {
+      background-color: lighten($color, 8%);
+    }
   }
 
   &:focus:not(.disabled),
   &:active:not(.disabled) {
-    box-shadow: 0 0 0 0.15rem rgba($color, 0.3);
+    $box-shadow: 0 0 0 0.1rem;
+    @if $background == $color-black {
+      box-shadow: $box-shadow lighten($background, 50%);
+    } @else {
+      box-shadow: $box-shadow lighten($color, 30%);
+    }
   }
 }
 
 @mixin createDefaultBorder($color: "") {
   @if ($color == "") {
     border: $default-border currentColor;
-  } @else {
+  } @else if $color != $color-white {
     border: $default-border $color;
   }
 }

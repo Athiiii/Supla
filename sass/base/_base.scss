@@ -8,9 +8,10 @@
 }
 
 html {
-/*
+  /*
 * defining 1rem as 10px 
 * default browser settings 1rem = 16px
 */
-font-size: 62.5%;
+  font-size: 62.5%;
+  font-family: $font-family;
 }
