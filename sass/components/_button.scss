@@ -56,21 +56,23 @@ button {
   * Generate color modifiers
   */
   @each $key, $color in $colors {
+    $inverted-color: setTextColorOnBackground($color);
+
     &-#{$key} {
-      color: $color-white;
+      color: $inverted-color;
       background-color: $color;
 
-      @include createDefaultBorder($color);
-      @include buttonActions($color);
+      @include createDefaultBorder($inverted-color);
+      @include buttonActions($color, $inverted-color);
     }
 
     &-outline-#{$key} {
-      @include buttonOutline($color);
+      @include buttonOutline($color, $inverted-color);
     }
   }
 
   &-outline {
-    @include buttonOutline($default-btn-color);
+    @include buttonOutline($default-btn-color, $color-black);
   }
 
   &-link {
@@ -83,6 +85,7 @@ button {
       transition: color 0.2s;
       background-color: transparent;
       text-decoration: underline;
+      display: inline-block;
 
       &:hover {
         color: lighten($color-link, 20%);

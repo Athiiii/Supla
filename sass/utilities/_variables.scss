@@ -5,6 +5,17 @@ $color-tertiary: #c45cd6;
 $color-error: #f44336;
 $color-warning: #ff9800;
 $color-info: #49b9b9;
+$color-link: $color-secondary;
+
+$color-black: #1f1d1d;
+$color-grey-darkest: #242424;
+$color-grey-darker: #363636;
+$color-grey-dark: #4a4a4a;
+$color-grey: #7a7a7a;
+$color-grey-light: #b5b5b5;
+$color-grey-lighter: #dbdbdb;
+$color-grey-lightest: #f5f5f5;
+$color-white: #fff;
 
 $colors: (
   "primary": $color-primary,
@@ -12,15 +23,17 @@ $colors: (
   "tertiary": $color-tertiary,
   "error": $color-error,
   "warning": $color-warning,
-  "info": $color-info
+  "info": $color-info,
+  "black": $color-black,
+  "grey-darkest": $color-grey-darkest,
+  "grey-darker": $color-grey-darker,
+  "grey-dark": $color-grey-dark,
+  "grey": $color-grey,
+  "grey-light": $color-grey-light,
+  "grey-lighter": $color-grey-lighter,
+  "grey-lightest": $color-grey-lightest,
+  "white": $color-white
 );
-
-$color-grey: #dbdbdb;
-$color-grey-dark: #c3c3c3;
-
-$color-white: #fff;
-$color-black: #1f1d1d;
-
 // TYPOGRAPHY
 $font-family: "Lato";
 
@@ -41,12 +54,9 @@ $font-large: 2.8rem;
 // OUTLINE
 $outline-thin: 0.06rem;
 $outline-small: 0.08rem;
-$outline-regular: 1rem;
+$outline-regular: 0.1rem;
 $outline-big: 0.14rem;
-$outline-large: 0.2.2rem;
-
-// link
-$color-link: $color-secondary;
+$outline-large: 0.22rem;
 
 $outlines: (
   "thin": $outline-thin,

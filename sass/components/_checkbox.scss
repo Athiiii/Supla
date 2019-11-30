@@ -45,14 +45,28 @@ $default-size: $font-medium;
     background: $color-primary;
   }
 
-  // Box focus
-  &:focus + label:before {
-    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.12);
-  }
-
   // Box checked
   &:checked + label:before {
     background: $color-primary;
+  }
+
+  @each $key, $color in $colors {
+    &.#{$key} {
+      // Box hover
+      &:hover + label:before {
+        background: $color;
+      }
+
+      // Box checked
+      &:checked + label:before {
+        background: $color;
+      }
+    }
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.12);
   }
 
   // Disabled state label.
@@ -76,7 +90,7 @@ $default-size: $font-medium;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     opacity: 0;
-    transition: opacity 0.1s;
+    transition: opacity 0.15s;
   }
 
   // Checkmark. Could be replaced with an image
