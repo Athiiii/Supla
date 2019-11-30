@@ -16,7 +16,7 @@ $border-tick-size: 0.3rem;
     font-size: $font-small;
     display: inline-block;
     margin-top: 0.3rem;
-    padding-left: $font-small + 0.4rem;
+    padding-left: $font-small + 0.2rem;
     cursor: pointer;
   }
 
@@ -73,13 +73,13 @@ $border-tick-size: 0.3rem;
   // Checkmark. Could be replaced with an image
   &:checked + label:after {
     content: "";
-    @include absolute($top: 0.8rem, $left: 0.2rem);
+    @include absolute($top: 0.8rem, $left: 0.15rem);
     background: $color-white;
     width: 0.2rem;
     height: 0.2rem;
     box-shadow: 2px 0 0 $color-white, $border-tick-size 0 0 $color-white,
       $border-tick-size -2px 0 $color-white,
-      $border-tick-size $border-tick-size * (-1) * (4/3) 0 $color-white,
+      $border-tick-size ($border-tick-size * (-1) * (4/3)) 0 $color-white,
       $border-tick-size -6px 0 $color-white,
       $border-tick-size -8px 0 $color-white;
     transform: rotate(45deg);

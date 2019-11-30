@@ -1,4 +1,23 @@
 /*
+* Defines Text Color based on the background color.
+* Function either returns black or white;
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*
+* defining 1rem as 10px 
+* default browser settings 1rem = 16px
+*/
+  font-size: 62.5%;
+  font-family: "Lato"; }
+
+/*
 * Put redundant code for 
 * a-btn-left-right & a-btn-right-left
 * buttons
@@ -56,10 +75,6 @@
     transform: rotate(360deg); } }
 
 /*
-* Defines Text Color based on the background color.
-* Function either returns black or white;
-*/
-/*
 * Button Component
 */
 .btn,
@@ -68,7 +83,7 @@ button {
   margin: 0.1rem 0;
   font-family: "Lato";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #1f1d1d;
   background-color: #fff;
   cursor: pointer;
@@ -1516,7 +1531,7 @@ button {
   .btn-link, .btn-link:visited, .btn-link:link {
     color: #2196f3;
     font-family: "Lato";
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: color 0.2s;
     background-color: transparent;
     text-decoration: underline; }
@@ -1542,6 +1557,58 @@ input[type="button"],
 button {
   border: none;
   outline: none; }
+
+.checkbox {
+  position: absolute;
+  opacity: 0 !important;
+  cursor: none;
+  pointer-events: none;
+  transition: background-color 0.2s; }
+  .checkbox + label {
+    position: relative;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding-left: 1.5rem;
+    cursor: pointer; }
+  .checkbox + label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(30%);
+    margin-right: 0.4rem;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: -0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: #dbdbdb; }
+  .checkbox + label:before {
+    transition: background 0.2s, box-shadow 0.2s; }
+  .checkbox:hover + label:before {
+    background: #4caf50; }
+  .checkbox:focus + label:before {
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.12); }
+  .checkbox:checked + label:before {
+    background: #4caf50; }
+  .checkbox:disabled + label {
+    color: #c3c3c3; }
+  .checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #c3c3c3; }
+  .checkbox + label:after {
+    transition: all 0.2s; }
+  .checkbox:checked + label:after {
+    content: "";
+    position: absolute;
+    top: 0.8rem;
+    left: 0.15rem;
+    background: #fff;
+    width: 0.2rem;
+    height: 0.2rem;
+    box-shadow: 2px 0 0 #fff, 0.3rem 0 0 #fff, 0.3rem -2px 0 #fff, 0.3rem -0.4rem 0 #fff, 0.3rem -6px 0 #fff, 0.3rem -8px 0 #fff;
+    transform: rotate(45deg); }
 
 .outline {
   color: red; }
