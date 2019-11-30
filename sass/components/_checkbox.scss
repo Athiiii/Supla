@@ -1,8 +1,14 @@
+$border-tick-size: 0.3rem;
+
 .checkbox {
   // hide it
   @include absolute();
-  opacity: 0;
-  cursor: pointer;
+
+  // prevent override of disable
+  opacity: 0 !important;
+
+  cursor: none;
+  pointer-events: none;
   transition: background-color 0.2s;
 
   & + label {
@@ -10,23 +16,27 @@
     font-size: $font-small;
     display: inline-block;
     margin-top: 0.3rem;
+    padding-left: $font-small + 0.4rem;
+    cursor: pointer;
   }
 
   // new box
   & + label:before {
     content: "";
+    @include absolute($top: 0, $left: 0);
+    transform: translateY(30%);
     margin-right: 0.4rem;
     display: inline-block;
     vertical-align: text-top;
     margin-top: -0.2rem;
-    width: 2rem;
-    height: 2rem;
+    width: $font-small;
+    height: $font-small;
     background: $color-grey;
   }
 
   // Box transition
   & + label:before {
-    transition: background 0.2s;
+    transition: background 0.2s, box-shadow 0.2s;
   }
 
   // Box hover
@@ -36,7 +46,7 @@
 
   // Box focus
   &:focus + label:before {
-    box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.12);
   }
 
   // Box checked
@@ -55,16 +65,23 @@
     background: $color-grey-dark;
   }
 
+  // add transition
+  & + label:after {
+    transition: all 0.2s;
+  }
+
   // Checkmark. Could be replaced with an image
   &:checked + label:after {
     content: "";
-    @include absolute($top: 1rem, $left: 0.5rem);
+    @include absolute($top: 0.8rem, $left: 0.2rem);
     background: $color-white;
     width: 0.2rem;
     height: 0.2rem;
-    box-shadow: 2px 0 0 $color-white, 4px 0 0 $color-white,
-      4px -2px 0 $color-white, 4px -4px 0 $color-white, 4px -6px 0 $color-white,
-      4px -8px 0 $color-white;
+    box-shadow: 2px 0 0 $color-white, $border-tick-size 0 0 $color-white,
+      $border-tick-size -2px 0 $color-white,
+      $border-tick-size $border-tick-size * (-1) * (4/3) 0 $color-white,
+      $border-tick-size -6px 0 $color-white,
+      $border-tick-size -8px 0 $color-white;
     transform: rotate(45deg);
   }
 }
