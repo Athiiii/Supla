@@ -128,7 +128,7 @@ button {
     .btn-primary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #67bd6a; }
     .btn-primary:focus:not(.disabled), .btn-primary:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #4caf50; }
+      box-shadow: 0 0 0 0.1rem #b5dfb7; }
   .btn-outline-primary {
     background-color: transparent;
     color: #4caf50;
@@ -138,7 +138,7 @@ button {
     .btn-outline-primary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #67bd6a; }
     .btn-outline-primary:focus:not(.disabled), .btn-outline-primary:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #4caf50; }
+      box-shadow: 0 0 0 0.1rem #b5dfb7; }
     .btn-outline-primary.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-primary.a-btn-left-right:hover, .btn-outline-primary.a-btn-left-right:focus {
@@ -330,7 +330,7 @@ button {
     .btn-secondary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #48a8f5; }
     .btn-secondary:focus:not(.disabled), .btn-secondary:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #2196f3; }
+      box-shadow: 0 0 0 0.1rem #b2dbfb; }
   .btn-outline-secondary {
     background-color: transparent;
     color: #2196f3;
@@ -340,7 +340,7 @@ button {
     .btn-outline-secondary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #48a8f5; }
     .btn-outline-secondary:focus:not(.disabled), .btn-outline-secondary:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #2196f3; }
+      box-shadow: 0 0 0 0.1rem #b2dbfb; }
     .btn-outline-secondary.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-secondary.a-btn-left-right:hover, .btn-outline-secondary.a-btn-left-right:focus {
@@ -532,7 +532,7 @@ button {
     .btn-tertiary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #d07dde; }
     .btn-tertiary:focus:not(.disabled), .btn-tertiary:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #c45cd6; }
+      box-shadow: 0 0 0 0.1rem #f0d6f5; }
   .btn-outline-tertiary {
     background-color: transparent;
     color: #c45cd6;
@@ -542,7 +542,7 @@ button {
     .btn-outline-tertiary:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #d07dde; }
     .btn-outline-tertiary:focus:not(.disabled), .btn-outline-tertiary:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #c45cd6; }
+      box-shadow: 0 0 0 0.1rem #f0d6f5; }
     .btn-outline-tertiary.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-tertiary.a-btn-left-right:hover, .btn-outline-tertiary.a-btn-left-right:focus {
@@ -734,7 +734,7 @@ button {
     .btn-error:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #f6675d; }
     .btn-error:focus:not(.disabled), .btn-error:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #f44336; }
+      box-shadow: 0 0 0 0.1rem #fccbc7; }
   .btn-outline-error {
     background-color: transparent;
     color: #f44336;
@@ -744,7 +744,7 @@ button {
     .btn-outline-error:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #f6675d; }
     .btn-outline-error:focus:not(.disabled), .btn-outline-error:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #f44336; }
+      box-shadow: 0 0 0 0.1rem #fccbc7; }
     .btn-outline-error.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-error.a-btn-left-right:hover, .btn-outline-error.a-btn-left-right:focus {
@@ -936,7 +936,7 @@ button {
     .btn-warning:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #ffa829; }
     .btn-warning:focus:not(.disabled), .btn-warning:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #ff9800; }
+      box-shadow: 0 0 0 0.1rem #ffd699; }
   .btn-outline-warning {
     background-color: transparent;
     color: #ff9800;
@@ -946,7 +946,7 @@ button {
     .btn-outline-warning:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #ffa829; }
     .btn-outline-warning:focus:not(.disabled), .btn-outline-warning:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #ff9800; }
+      box-shadow: 0 0 0 0.1rem #ffd699; }
     .btn-outline-warning.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-warning.a-btn-left-right:hover, .btn-outline-warning.a-btn-left-right:focus {
@@ -1138,7 +1138,7 @@ button {
     .btn-info:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #66c4c4; }
     .btn-info:focus:not(.disabled), .btn-info:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #49b9b9; }
+      box-shadow: 0 0 0 0.1rem #b8e4e4; }
   .btn-outline-info {
     background-color: transparent;
     color: #49b9b9;
@@ -1148,7 +1148,7 @@ button {
     .btn-outline-info:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #66c4c4; }
     .btn-outline-info:focus:not(.disabled), .btn-outline-info:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #49b9b9; }
+      box-shadow: 0 0 0 0.1rem #b8e4e4; }
     .btn-outline-info.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-info.a-btn-left-right:hover, .btn-outline-info.a-btn-left-right:focus {
@@ -1340,7 +1340,7 @@ button {
     .btn-black:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #343131; }
     .btn-black:focus:not(.disabled), .btn-black:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #1f1d1d; }
+      box-shadow: 0 0 0 0.1rem #6e6767; }
   .btn-outline-black {
     background-color: transparent;
     color: #1f1d1d;
@@ -1350,7 +1350,7 @@ button {
     .btn-outline-black:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #343131; }
     .btn-outline-black:focus:not(.disabled), .btn-outline-black:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #1f1d1d; }
+      box-shadow: 0 0 0 0.1rem #6e6767; }
     .btn-outline-black.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-black.a-btn-left-right:hover, .btn-outline-black.a-btn-left-right:focus {
@@ -1542,7 +1542,7 @@ button {
     .btn-grey-darkest:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #383838; }
     .btn-grey-darkest:focus:not(.disabled), .btn-grey-darkest:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #242424; }
+      box-shadow: 0 0 0 0.1rem #717171; }
   .btn-outline-grey-darkest {
     background-color: transparent;
     color: #242424;
@@ -1552,7 +1552,7 @@ button {
     .btn-outline-grey-darkest:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #383838; }
     .btn-outline-grey-darkest:focus:not(.disabled), .btn-outline-grey-darkest:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #242424; }
+      box-shadow: 0 0 0 0.1rem #717171; }
     .btn-outline-grey-darkest.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey-darkest.a-btn-left-right:hover, .btn-outline-grey-darkest.a-btn-left-right:focus {
@@ -1744,7 +1744,7 @@ button {
     .btn-grey-darker:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #4a4a4a; }
     .btn-grey-darker:focus:not(.disabled), .btn-grey-darker:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #363636; }
+      box-shadow: 0 0 0 0.1rem #838383; }
   .btn-outline-grey-darker {
     background-color: transparent;
     color: #363636;
@@ -1754,7 +1754,7 @@ button {
     .btn-outline-grey-darker:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #4a4a4a; }
     .btn-outline-grey-darker:focus:not(.disabled), .btn-outline-grey-darker:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #363636; }
+      box-shadow: 0 0 0 0.1rem #838383; }
     .btn-outline-grey-darker.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey-darker.a-btn-left-right:hover, .btn-outline-grey-darker.a-btn-left-right:focus {
@@ -1946,7 +1946,7 @@ button {
     .btn-grey-dark:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #5e5e5e; }
     .btn-grey-dark:focus:not(.disabled), .btn-grey-dark:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #4a4a4a; }
+      box-shadow: 0 0 0 0.1rem #979797; }
   .btn-outline-grey-dark {
     background-color: transparent;
     color: #4a4a4a;
@@ -1956,7 +1956,7 @@ button {
     .btn-outline-grey-dark:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #5e5e5e; }
     .btn-outline-grey-dark:focus:not(.disabled), .btn-outline-grey-dark:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #4a4a4a; }
+      box-shadow: 0 0 0 0.1rem #979797; }
     .btn-outline-grey-dark.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey-dark.a-btn-left-right:hover, .btn-outline-grey-dark.a-btn-left-right:focus {
@@ -2148,7 +2148,7 @@ button {
     .btn-grey:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #8e8e8e; }
     .btn-grey:focus:not(.disabled), .btn-grey:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #7a7a7a; }
+      box-shadow: 0 0 0 0.1rem #c7c7c7; }
   .btn-outline-grey {
     background-color: transparent;
     color: #7a7a7a;
@@ -2158,7 +2158,7 @@ button {
     .btn-outline-grey:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #8e8e8e; }
     .btn-outline-grey:focus:not(.disabled), .btn-outline-grey:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #7a7a7a; }
+      box-shadow: 0 0 0 0.1rem #c7c7c7; }
     .btn-outline-grey.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey.a-btn-left-right:hover, .btn-outline-grey.a-btn-left-right:focus {
@@ -2350,7 +2350,7 @@ button {
     .btn-grey-light:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #c9c9c9; }
     .btn-grey-light:focus:not(.disabled), .btn-grey-light:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #b5b5b5; }
+      box-shadow: 0 0 0 0.1rem white; }
   .btn-outline-grey-light {
     background-color: transparent;
     color: #b5b5b5;
@@ -2360,7 +2360,7 @@ button {
     .btn-outline-grey-light:hover:not(.disabled):not([class*="a-btn"]) {
       background-color: #c9c9c9; }
     .btn-outline-grey-light:focus:not(.disabled), .btn-outline-grey-light:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #b5b5b5; }
+      box-shadow: 0 0 0 0.1rem white; }
     .btn-outline-grey-light.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey-light.a-btn-left-right:hover, .btn-outline-grey-light.a-btn-left-right:focus {
@@ -2551,9 +2551,9 @@ button {
     .btn-grey-lighter {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-grey-lighter:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-grey-lighter:focus:not(.disabled), .btn-grey-lighter:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
   .btn-outline-grey-lighter {
     background-color: transparent;
     color: #dbdbdb;
@@ -2561,9 +2561,9 @@ button {
     .btn-outline-grey-lighter {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-outline-grey-lighter:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-outline-grey-lighter:focus:not(.disabled), .btn-outline-grey-lighter:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
     .btn-outline-grey-lighter.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey-lighter.a-btn-left-right:hover, .btn-outline-grey-lighter.a-btn-left-right:focus {
@@ -2754,9 +2754,9 @@ button {
     .btn-grey-lightest {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-grey-lightest:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-grey-lightest:focus:not(.disabled), .btn-grey-lightest:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
   .btn-outline-grey-lightest {
     background-color: transparent;
     color: #f5f5f5;
@@ -2764,9 +2764,9 @@ button {
     .btn-outline-grey-lightest {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-outline-grey-lightest:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-outline-grey-lightest:focus:not(.disabled), .btn-outline-grey-lightest:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
     .btn-outline-grey-lightest.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-grey-lightest.a-btn-left-right:hover, .btn-outline-grey-lightest.a-btn-left-right:focus {
@@ -2957,18 +2957,18 @@ button {
     .btn-white {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-white:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-white:focus:not(.disabled), .btn-white:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
   .btn-outline-white {
     background-color: transparent;
     color: #fff; }
     .btn-outline-white {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-outline-white:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-outline-white:focus:not(.disabled), .btn-outline-white:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
     .btn-outline-white.a-btn-left-right {
       background-color: transparent; }
       .btn-outline-white.a-btn-left-right:hover, .btn-outline-white.a-btn-left-right:focus {
@@ -3159,9 +3159,9 @@ button {
     .btn-outline {
       transition: background-color 0.4s, box-shadow 0.4s, color 0.4s; }
     .btn-outline:hover:not(.disabled):not([class*="a-btn"]) {
-      background-color: #dbdbdb; }
+      background-color: #e8e8e8; }
     .btn-outline:focus:not(.disabled), .btn-outline:active:not(.disabled) {
-      box-shadow: 0 0 0 0.05rem #dbdbdb; }
+      box-shadow: 0 0 0 0.1rem #a19a9a; }
     .btn-outline.a-btn-left-right {
       background-color: transparent; }
       .btn-outline.a-btn-left-right:hover, .btn-outline.a-btn-left-right:focus {

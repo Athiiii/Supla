@@ -26,7 +26,7 @@
 
   &:hover:not(.disabled):not([class*="a-btn"]) {
     @if $background == $color-black {
-      background-color: $color-grey-lighter;
+      background-color: lighten($color-grey-light, 20%);
     } @else {
       background-color: lighten($color, 8%);
     }
@@ -34,11 +34,11 @@
 
   &:focus:not(.disabled),
   &:active:not(.disabled) {
-    $box-shadow: 0 0 0 0.05rem;
+    $box-shadow: 0 0 0 0.1rem;
     @if $background == $color-black {
-      box-shadow: $box-shadow rgba($color-grey-lighter, 5%);
+      box-shadow: $box-shadow lighten($background, 50%);
     } @else {
-      box-shadow: $box-shadow rgba($color, 5%);
+      box-shadow: $box-shadow lighten($color, 30%);
     }
   }
 }
